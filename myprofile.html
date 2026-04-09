@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<header>
+     <div id="col1">
+          profile pic
+     </div>
+     <div id="col2">
+          banner
+     </div>
+
+
+</header>
+<title>My profile </title>
+<style>
+div
+{
+border:1px black solid;
+}
+
+
+#col1
+{
+height:100px;
+width:20%;
+margin:10px;
+border-radius:100px;
+}
+ 
+#col2
+{ 
+width:60%;
+height:200px;
+margin:10px;
+}
+  
+
+
+header
+{ 
+border:1px black solid;
+//height:300px;
+display:flex;
+//flex-direction:column;
+flex-direction:row;
+//justify-content:end;
+//justify-content:start;
+//justify-content:center;end;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+main
+{
+display:flex;
+flex-wrap:wrap;
+}
+
+
+.cardstyle
+{
+width:60%;
+height:180px;
+box-shadow:10px 10px 10px black;
+}
+
+
+/* Extra small devices (phones, 600px and down)*/
+ 
+
+@media only screen and (max-width: 600px)
+{ 
+body{background:green;}
+#col2{display:none}
+header{justify-content:center;}
+
+.cardstyle{
+width:50%;
+margin:auto;
+margin-top:20px;
+}
+
+
+}
+
+/* small devices (portrait tablets and large phones, 600px and up*/
+
+@media only screen and (min-width: 600px)
+{
+body{background:yellow;}
+#col2{width:70%;}
+#col1{width:50;}
+height:30px;
+}
+main {
+justify-content:center;
+}
+.cardstyle{width:40%;
+margin:10px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px)
+{
+body{background:pink;}
+#col1{width:10%;
+height:120px;}
+#col2{height:200px;}
+.cardstyle{
+width:20%;
+margin:10px;
+}
+}
+
+/* large devices (laptop/desktop, 992px and up) */
+@media only screen and (min-width:992px)
+{
+body{background:red;}
+#col2{width:90%;height:400px;margin:auto;}
+#col1{display:none;}
+}
+.pic
+{
+width:100%;
+
+}
+</style>
+
+
+<body>
+<main>
+
+
+<div class="cardstyle" id="card1">
+<img src="images/phool.jpg" class="pic" height="100%">
+</div>
+
+<div class="cardstyle" id="card2">
+<img src="images/ool.jpg" class="pic" height="100%">
+</div>
+
+
+<div class="cardstyle" id="card3">
+<img src="images/fhul.jpg" class="pic" height="100%">
+
+
+</div>
+<div class="cardstyle" id="card4">
+
+<img src="images/images.jpg" class="pic" height="100%">
+</div>
+
+<div class="cardstyle" id="card5">
+<img src="images/ful.jpg" class="pic" height="100%">
+</div>
+
+<div class="cardstyle" id="card6">
+<img src="images/pool.jpg" class="pic" height="100%">
+</div>
+
+<div class="cardstyle" id="card7">
+<img src="images/gulab.jpg" class="pic" height="100%">
+</div>
+
+
+<div class="cardstyle" id="card8">
+<img src="images/f1.jpg" class="pic" height="100%">
+</div>
+
+<div class="cardstyle" id="card9">
+<img src="images/f2.jpg" class="pic" height="100%">
+</div>
+
+</main>
+</body>
+<footer> </footer>
+
+
+
+</html>
