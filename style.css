@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+min-height: 100vh;
+width: 100%;
+background-color: #000000;
+background-image: linear-gradient(#A98B76,#F3E4C9);
+background-position: center;
+background-size:cover;
+position: relative;
+}
+
+nav{
+    display: flex ;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+   
+    margin: auto;
+}
+
+.nav-links{
+    flex:1;
+    text-align: center;
+    box-shadow: 2px 5px 5px rgb(67, 62, 62);
+    cursor: pointer;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#000000;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    margin: auto;
+    background:#ffffff;
+    width: 0%;
+    height:2px;
+    display: block;
+    transition: 0.50s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+ 
+ 
+}
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+   
+
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box h1{
+    font-size: 50px;
+
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size: 15px;
+    color: #000000;
+}
+.view{
+    display: inline;
+    text-decoration: none;
+    color: #000000;
+    border:1px solid #000000 ;
+    padding: 12px 34px;
+    font-size: 13px;
+   background: transparent;
+   position: relative; 
+   cursor: pointer;
+   transition: 0.50s;
+}
+.view:hover{
+    border: 1px solid #9c8280;
+    background:#ffffff ;
+    transform: 1.10s;
+    text-decoration:underline;color:rgb(251, 251, 251);}
+}
+footer{
+   display: flex ;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{flex:1;
+    text-align: center;
+
+}
+.footer ul li{list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.footer ul li a{
+     color:#000000;
+    text-decoration: none;
+    font-size: 16px;}
+
+.footer ul li::after{
+    content: '';
+    margin: auto;
+    background:#A98B76;
+    width: 0%;
+    height:2px;
+    display: block;
+    transition: 0.5s;
+}
+.footer ul li:hover::after{
+    width: 100%;
+
+}
+.copyright{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.email{
+    text-align: center;
+}
