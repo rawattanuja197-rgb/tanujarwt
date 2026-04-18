@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio_video</title>
+</head>
+
+<style>
+
+*{  
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+ }
+header{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Arial black;
+    background:#670D2F;
+    color:#ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.308);
+    //width:50%;
+    //margin:auto;
+    margin-bottom: 40px;
+}
+audio, video{
+    display: block;
+    margin:auto;
+}
+
+
+
+main{
+   margin-top: 100px;
+}
+footer{
+    margin-top: 40px;
+    background: #670D2F;
+    text-align: center;
+     
+    color: #ffffff;
+    
+}
+.end{
+    text-align: center;
+            background: #3A0519;
+       margin-top: 20px;
+       padding: 10px;
+}
+audio{
+    margin-bottom: 30px;
+    //box-shadow: 5px 5px 5px #3a051947;
+    margin-top:-40px;
+}
+video{
+    height:auto;
+    max-width: 100%;
+    box-shadow: #670d2f7d 5px 5px 5px ;
+}
+body{
+    background: #f9d6e3;
+}
+
+
+
+</style>
+<header>
+    Using media (Audio/video) in web page
+</header>
+
+<body>
+<!--
+browser   MP4  webM  Ogg
+Edge      yes  yes   yes 
+chrome    yes yes yes
+firefox yes yes yes
+safari yes yes no
+opera yes yes yes
+MP4 video/MP4
+WebM video/webm
+Ogg video/ogg 
+Browser MP3 WAV OGG
+  Edge/IE     yes  yes   yes 
+chrome    yes yes yes
+firefox yes yes yes
+safari yes yes no
+opera yes yes yes
+MP3   audio/mpeg
+OGG audio/ogg
+WAV audio/wav
+
+-->    
+<main>
+    <audio controls width="200" height="200" autoplay loop muted>
+        <source src="images/a1.mp3" type="audio/mp3">
+        <h1>update your browser/ This audio is not supported in your web browser</h1>
+
+    </audio>
+
+
+
+    <video controls width="700" height="700" autoplay loop muted>
+        <source src="images/v1.mp4" type="video/mp4">
+        <h1>update your browser/ This audio is not supported in your web browser</h1>
+</main>
+<footer><p class="email">Email:rawattanuja197@gmail.com</p>
+       <div class="end">
+        <P class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></P>
+            </div>
+</body>
+</html>
