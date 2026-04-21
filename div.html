@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div block</title>
+</head>
+<style>
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+ font-family:Arial, Helvetica, sans-serif;
+ background: #f9d6e3;
+}
+html{
+    scroll-behavior: smooth;
+}
+div{
+    //border:1px #670D2F;
+
+}
+header{
+    background: #670D2F;
+    color: #f9d6e3;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.362);
+    margin-bottom: 10px;
+    
+}
+
+
+#header{
+    width:90%;
+    height: auto;
+    margin: auto;
+    }
+    #col1{
+        width: 400px;
+        height: 300px;
+        padding:5px;
+        text-align: center;
+        float: left;
+        margin: 2px;
+        border: 4px #670D2F dashed;
+    }
+    #col1 h3{
+        margin:10px;
+    }
+    #col1 img{
+        border-radius:50%;
+        //box-shadow:2px px 8px grey;
+
+    }
+    #col2{
+        width: 400px;
+        height: 300px;
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin: 2px;
+        //border:10px green solid;
+        //border:10px green ridge;
+        //border:10px green outset;
+        //border:10px #670D2F inset;
+        //border:10px green dashed;
+        //border:10px green dotted;
+        //border:10px green double;
+        border:4px #670D2F dashed;
+        
+    }
+    #col3 {
+        width: 400px;
+        height: 300px;
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin: 2px;
+        border: 4px #670D2F dotted;
+
+    }
+    #col3 ul{
+        list-style: none;
+    }
+    #col2 ul{
+        list-style: none;
+
+    }
+    #main{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        text-align: center;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    @media (max-width:600px){
+   #col1,#col2,#col3{
+    width:100%;
+    float:none;
+    margin:10px 0;
+    border: #670D2F dashed;
+    }
+    #main{
+        width: 100%;
+    }
+    header{
+        font-size:20px;
+        padding:15px;
+
+    }
+    footer{
+        font-size: 14px;
+        padding: 10px;
+
+    }}
+    #footer{
+        width:100%;
+        height: auto;
+        margin: auto;
+        color: white;
+        background: #670D2F ;
+        text-align: center;
+        padding: 10px;
+        clear: both;
+    }
+</style>
+<body>
+    <header>DIV BLOCK</header>
+    <div id="header">
+    <div id="col1">
+        <img src="images/me.png" width="180px" height="auto">
+        <h3>Tanuja Rawat</h3>
+        <p> UI/UX Designer| Graphic Designer</p>
+        </div>
+        <div id="col2">
+            <h2>Practice work</h2>
+            <ul>
+<li><a href="index.html">Home </a></li>
+<li><a href="myprofile.html">Profile in html</a></li>
+<li><a href="nav.html">Responsiveprofile in html</a></li>
+<li><a href="project.html">Photogallery in html</a></li>
+<li><a href="bookmark.html">Bookmark in html</a></li>
+<li><a href="banner.html">Banner</a></li>
+<li><a href="list.html">List in html</a></li>
+<li><a href="table.html">Table in html</a></li>
+<li><a href="banner3.html">Runbanner</a></li>
+<li><a href="registration 2.html">Registration form in html</a></li>
+<li><a href="usinggooglemap.html">Iframe</a></li>
+<li><a href="media.html">Media in web page</a></li>
+<li><a href="media2.html">video</a></li>
+            </ul>
+        </div>
+        <div id="col3">
+            <h2> WEB LINKS</h2>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                 <li><a href="http://instagram.com">Instagram</a></li>
+            <li><a href="https://www.behance.net/tanujarawat1">Behance</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="main"><h2>About me </h2><p> I'm a passionate UI/UX and graphic designer with a growing focus on web design. I enjoy turning ideas into clean, user-friendly digital experiences that are both visually appealing and functional. I strive to design interfaces that connect with users effortlessly. Currently, I’m expanding my skills in web design to build seamless and responsive websites. I’m always eager to learn, experiment, and bring fresh perspectives to every project I work on.</p></div>
+        <div id="footer">&copy; Tanuja Rawat 2026| All right reserved.</div>
+    </body>
+</html>
