@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+</head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ <style>
+    :root{
+        --dark:#670D2F;
+        --light:#f9d6e3;
+        --mysize:50px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: var(--dark);
+        color: var(--light);
+       
+    }
+    header h1{
+        text-align: center;
+        background: #3a051962;
+        font-size: var(--mysize);
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top:0px;
+        padding: 20px;
+        
+
+    }
+   
+    .text-style{
+        font-family: Arial, Helvetica, sans-serif;
+        padding:50px;
+        text-align: justify;
+        font-size: 20px;
+        border-top: 10px #3A0519;
+        text-indent:40px;
+         border:#3A0519 dashed;
+        box-shadow: rgba(0, 0, 0, 0.455) 5px 5px 5px ;
+        margin: 30px;
+
+    }
+    #sub{
+        //background:cyan;
+        display: inline-block;
+        font-size: 38px;
+        padding:30px;
+        margin:10px;
+
+    }
+    #sub:hover{
+        cursor: pointer;
+        animation:pulse;
+        animation-duration:0.50s
+    }
+      
+    .footer{
+       text-align: center;
+        background-color:#3a051961;
+        color: white;
+        margin-top: 50px;
+        //margin-bottom: 10px; 
+        padding: 10px;
+    }
+         
+        .end{
+         text-align: center;
+        background:#3A0519;
+       margin-top: 0px;
+       padding: 20px;
+       
+       
+    }
+   @media (max-width:600px){
+
+.footer{
+    padding:20px 10px;
+    text-align:center;
+    margin-top: 30px;
+}
+  #sub{
+        //background:cyan;
+        display: inline-block;
+        font-size: 25px;
+        padding:30px;
+        margin:10px;
+
+    }
+      .text-style{
+        font-family: Arial, Helvetica, sans-serif;
+        padding:40px;
+        text-align: justify;
+        font-size: 15px;
+        
+        text-indent:40px;
+        border:#3A0519 dashed;
+        box-shadow: rgba(0, 0, 0, 0.455) 5px 5px 5px ;
+        margin: 10px;
+
+    }
+       header h1{
+        text-align: center;
+        background: #3a051962;
+        font-size:40px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top:0px;
+        padding: 20px;
+        
+        
+
+    }
+
+}
+ </style>
+<body>
+    <header>
+        <h1 class="animate__animated animate__backInLeft">TANUJA RAWAT</h1>
+    </header>
+    <main>
+        <section>
+            <h1 id="sub">ABOUT</h1>
+            <p class="text-style animate__animated animate__backInLeft">
+                    I am a passionate and creative designer with skills in graphic design, web design, and UI/UX design. I enjoy turning ideas into visually appealing and user-friendly designs that solve real problems. Currently, I am enhancing my technical knowledge by learning HTML at Arena Animation, which is helping me understand how designs come to life on the web. I have a keen eye for detail, color, and layout, and I am always eager to learn new tools and trends in the design field. My goal is to create meaningful digital experiences that are both attractive and easy to use.
+            </p>
+        </section>
+    </main>
+    <div class="footer">
+        
+        <p class="email">Email:rawattanuja197@gmail.com</p>
+        </div>
+        <div class="end">
+        <P class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></P>
+            </div>
+    </footer>
+    
+</body>
+</html>
