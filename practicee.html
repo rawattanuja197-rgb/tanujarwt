@@ -3,30 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice work</title>
+    <title>Practice Work</title>
 </head>
-<header >
-    MY PRACTICE WORK
-</header>
-<body>
-    <main>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        background: #f9d6e3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     
-    <nav>
-<!--order list-->
-<ul>
-<li><a href="index.html">Home</li>
+    html{
+        scroll-behavior: smooth;
 
-<li><a href="https://www.figma.com/proto/gAlHHm06QpBEAGApaqbjgo/Untitled?node-id=119-2&t=J6EX1H8uXZOKVRLH-1">Figma App Design</li>
-<li><a href="http://Pinterest.com">Pinterest</li>
-    <li><a href="https://www.behance.net/tanujarawat1">Behance</li>
-</ul>
+    }
+    div{
+        //border:1px gray;
 
-</nav>
+    }
+    header{
+        background: #670D2F;
+        color: #fceff4;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0.362);
+        margin-bottom:10px
+    }
+    #header{
+        width: 90%;
+        height:auto;
+        margin: auto;
+    }
+    #col1{
+        width: 400px;
+        height: 400px;
+        padding: 5px;
+        text-align: center;
+        margin: 2px;
+        float: left;
+        //border: 4px dashed grey;
 
+    }
+    #col1 h3{
+        margin: 10px;
+    }
+    #col1 img{
+        margin-top: 40px;
+        border-radius: 50%;
+         margin-left: 60px;
 
-<div class="bar">
-<ol>
-<li><a href="index.html">Index </a></li>
+    }
+    #col2{
+        width: 400px;
+        height: 400px;
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin:20px;
+        margin-left: 50px;
+        border: 4px #670D2F dotted;
+    }
+    #col3{
+        width: 400px;
+        height: 400px;
+        padding: 5px;
+        text-align: center;
+        float: left;
+        margin: 20px;
+         margin-left: 60px;
+        border: dotted #670D2F 4px;
+}
+#col3 ul{
+    margin-top: 20px;
+    list-style: none;
+
+}
+#col2 ul{
+    margin-top:20px;
+    list-style: none;
+
+}
+
+h2{
+    margin-top: 10px;
+}
+
+@media(max-width:600px){
+    #col1,#col2,#col3{
+        width: 100%;
+        float: none;
+        margin:10px 0;
+        border: gray dashed;
+    }
+   
+    header{
+        font-size: 20px;
+        padding: 15px;
+
+    }
+    footer{
+        font-size:14px;
+        padding: 10px;
+        
+        
+    }
+#col1 img{
+    display: none;
+}
+#col1{
+    display: none;
+}
+#col2{
+     width:90%;
+     margin-left: 25px;
+}}
+.footer{
+    width: 100%;
+    height: auto;
+     margin-top:500px;
+    color: white;
+    background:#46041d ;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+#foot{
+    background: #670D2F;
+   padding: 10px;
+}
+#col2 a{
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    #col2 a:hover{
+    color:#000000;
+    padding-left:8px; 
+    }
+    #col3 a{
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    #col3 a:hover{
+    color:#000000;
+    padding-left:8px; 
+    }
+   a:link{color:rgb(0, 0, 0);text-decoration:none;}
+a:visited{color:rgb(0, 0, 0);}
+a:hover{text-decoration:underline;color:#670D2F;}
+a:active{}
+</style>
+<body>
+    <header>
+        PRACTICE WORK
+    </header>
+    
+        <div id="col2">
+            <h2>HTML WORK</h2>
+            <ul>
+                <li><a href="index.html">Home </a></li>
 <li><a href="myprofile.html">Profile in html</a></li>
 <li><a href="nav.html">Responsiveprofile in html</a></li>
 <li><a href="project.html">Photogallery in html</a></li>
@@ -44,75 +182,30 @@
 <li><a href="animate.html">Animation in html </a></li>
 <li><a href="threedanimation.html">3D ANIMATION </a></li>
 
-</div>
-</main>
+            </ul>
 
-    
-</body>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background-color: #f9d6e3;
-    }
-    
-    header{
-        font-family:arial black rgb(168, 107, 107);
-        color: white;
-        font-size: 30px;
-        text-align: center;
+        </div>
+        <div id="header">
+        <div id="col1">
+            <a href="index.html">
+            <img src="images/me.png" width="250px" height="auto" >
+            <h3>TANUJA RAWAT</h3>
+            <p>UI/UX Designer| Graphic Designer</p></a>
+        </div>
+        <div id="col3">
+            <h2>JAVASCRIPT</h2>
+            <ul>
+                <li><a href="script.html">JAVASCRIPT practice</a></li>
+<li><a href="createelement.html"> Creating Tag in JAVASCRIPT </a></li>
+            </ul>
+        </div>
+
+    </div>
       
-        background-color: #670D2F;
-        height: 50px;
-        width: 100%;
-        padding: 10px;
-        //border-radius: 10px;
-        //box-shadow: 5px 5px 5px rgb(43, 42, 42);
+    
+    <div class="footer">
+        <div id="foot">Email:rawattanuja197@gmail.com</div></br>&copy; Tanuja Rawat 2026| All right reserved.</div>
+ 
+    </body>
 
-        
-    }
-    ul{
-        list-style: none;
-       background-color: #f9d6e3;
-       text-align: center;
-       margin-top:30px ;
-       
-    }
-    ol{
-        text-align: center;
-        list-style: none;
-        background-color: #f9d6e3;
-        margin-top: 20px;
-    }
-    footer{
-        background-color: #670D2F;
-        color: white;
-      
-        text-align: center;
-        padding: 10px;
-        margin-top: 100px;
-    }
-
-    .bar a{
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .bar a:hover{
-    color:#000000;
-    padding-left:8px; 
-    }
-    a:link{color:rgb(0, 0, 0);text-decoration:none;}
-a:visited{color:rgb(0, 0, 0);}
-a:hover{text-decoration:underline;color:#670D2F;}
-a:active{}
-</style>
-<footer>
-        
-        
-        <p class="email">Email:rawattanuja197@gmail.com</p>
-        <P class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></P>
-    </footer>
 </html>

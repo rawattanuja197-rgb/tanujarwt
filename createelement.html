@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+        document.write("<h1 style='color:white;padding:10px;box-shadow:10px 10px 50px black;margin-bottom:100px;text-align:center;background:gray;'>Creating Tag By JAVASCRIPT</h1>")
+
+        var pic = document.createElement("img")
+        document.body.appendChild(pic)
+        pic.src="images/f10.png"
+        pic.style="transition:0.50s;border-radius:10px;margin:20px;cursor:pointer;"
+        document.title= "creating tag"
+        pic.style.width="30%"
+        pic.style.boxShadow="10px 10px 10px gray"
+
+        pic.onclick = function()
+        {
+            pic.src="images/f11.png"
+        }
+        pic.onmouseout=function()
+        {
+            pic.src="images/f10.png"
+            this.style.transform="scale(1)"
+        }
+        pic.onmouseover=function()
+        {
+            this.style.transform="scale(1.20)"
+        }
+        document.write("<footer style='text-align:center;margin-top:100px;background:gray;padding:10px;color:white;font-weight:bold;font-size:20px'>&copy; Tanuja Rawat 2026| All right reserved.</footer>")
+
+        
+    </script>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+</style>
+</body>
+
+</html>
