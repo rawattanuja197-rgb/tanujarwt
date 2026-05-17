@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{padding:0%;
+        margin: 0%;
+            
+        footer{
+        text-align:center;
+        background-color: #670D2F;
+        color: white;
+        margin-top: 500px;
+        padding-top: 10px;
+        //margin-bottom: 30px;
+        }
+     .end{
+         text-align: center;
+         background: #3A0519;
+        //margin-top: 20px;
+        padding: 5px;
+    }
+        }
+    </style>
+    
+    <script>
+        document.write("<h1 style='text-align:center;background:#670D2F;color:white;padding:10px;box-shadow:1px 1px 10px black;margin-bottom:20px;'>Creating Random Colors</h1>")
+        var b = document.createElement("button")
+        
+        
+        b.innerHTML="Click to create Random Colors"
+        document.body.appendChild(b)
+        function Randomcolor()
+        
+        {
+            var red= Math.round(Math.random()*255)
+            var green= Math.round(Math.random()*255)
+            var blue= Math.round(Math.random()*255)
+            var c ="rgb("+red+","+green+","+blue+")"
+           //alert(c)
+            document.body.style.background = c
+           
+        }
+        b.onclick = Randomcolor
+         document.title="colors"
+          
+
+        
+    </script>
+    <footer>
+        
+    <div class="footer">
+        
+        <p class="email">Email:rawattanuja197@gmail.com</p>
+        </div>
+        <div class="end">
+        <P class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></P>
+            </div>
+    </footer>
+</body>
+</html>

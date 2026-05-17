@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0%;
+
+        }
+        header{
+            font-size: 40px;
+            text-align: center;
+            background: #670D2F;
+            padding: 20px;
+            color: white;
+            margin-bottom: 50px;
+            box-shadow: 1px 3px 20px black;
+        }
+        h1{
+            margin-left: 550px;
+        }    
+        footer{
+            margin-top: 200px;
+        
+        background-color: #670D2F;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 2px;
+
+        }
+     .end{
+        text-align: center;
+        padding-top: 5px; 
+         background: #3A0519;
+         padding-bottom: 2px;
+        
+    }
+       @media(max-width:600px){
+        header{
+            font-size: 30px;
+            text-align: center;
+            background: #670D2F;
+            padding: 10px;
+            color: white;
+            margin-bottom: 50px;
+            box-shadow: 1px 3px 20px black;
+        }
+        h1{
+            margin-left: 20px;
+        } 
+       }
+    </style>
+    <header>
+         Playing With Numbers
+    </header>
+    <h1>
+        Insert no. 1<input type="number" id="t1" value="0">
+        Insert no. 2<input type="number" id="t2" value="0"></br></br>
+        Result<input id="r" type="number" id="t3" value="0">
+            </br></br>
+        <button onclick="f1()">ADD(+)</button>
+        <button onclick="f2()">MINUS(-)</button>
+        <button onclick="f3()">MULTIPLY(X)</button>
+        <button onclick="f4()">DIVIDE(/)</button>
+    </h1>
+    <script>
+        
+   var n1 = document.getElementById("t1")
+   
+   var n2 = document.getElementById("t2")
+   
+   var n3 = document.getElementById("r")
+
+   function f1()
+   {
+    //alert("chal raha hai ")
+ var sum = parseInt(n1.value)+parseInt(n2.value)
+ n3.value=sum
+   }
+    function f2()
+   {
+ var sum = parseInt(n1.value)-parseInt(n2.value)
+ n3.value=sum
+   }
+    function f3()
+   {
+ var sum = parseInt(n1.value)*parseInt(n2.value)
+ n3.value=sum
+   }
+    function f4()
+   {
+ var sum = parseInt(n1.value)/parseInt(n2.value)
+ n3.value=sum
+   }
+   document.title="calculation"
+   document.body.style.background="#f9d6e3"
+   
+    </script>
+    <footer>
+        
+    <div class="footer">
+        
+        <p class="email">Email:rawattanuja197@gmail.com</p>
+        </div>
+        <div class="end">
+        <P class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></P>
+            </div>
+    </footer>
+</body>
+
+</html>
