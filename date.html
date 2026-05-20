@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin: 0%;
+    }
+    #clock{
+        background: #670D2F;
+        color: white;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        box-shadow: 1px 1px 10px black;
+        margin-top: 200px ;
+        margin-left: 620px;
+        font-size: 20px;
+
+    }
+    button{
+        background: #670D2F;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 720px;
+        margin-bottom: 8px;font-size: 15px;
+        
+    }
+    h1{
+        background: #670D2F;
+        color: white;
+        padding: 15px;
+        box-shadow: 1px 1px 10px black;
+        text-align: center;
+        
+    }
+    body{
+        background: rgb(236, 190, 198);
+    }
+    .footer{
+    background-color: #670D2F;
+    color: white;
+    padding: 5px 0 0 0;
+    width: 100%;
+    margin-top: 200px;
+}
+    .foot {
+    margin-left:20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.end{
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px 0;
+    background-color: #3a061a;
+}
+@media(max-width:600px){
+#clock{
+        background: #670D2F;
+        color: white;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        box-shadow: 1px 1px 10px black;
+        margin-top: 200px ;
+        margin-left: 90px;
+        font-size: 20px;
+
+    }
+    button{
+        background: #670D2F;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 90px;
+        margin-bottom: 8px;font-size: 15px;
+        
+    }
+    h1{
+        background: #670D2F;
+        color: white;
+        padding: 15px;
+        box-shadow: 1px 1px 10px black;
+        text-align: center;
+        font-size: 30px;
+        
+    }
+}
+</style>
+<body>
+    <h1>
+        CLOCK IN JAVASCRIPT
+    </h1>
+    <div id="clock">TIME</div>
+    <button onClick="st()">Start Clock</button>
+    <button onClick="sto()">Stop Clock</button>
+    <script>
+        function show()
+        {
+            var d = new Date()
+            var t = document.getElementById("clock")
+            t.innerHTML = d.toLocaleTimeString()
+        }
+        var timer
+        function st()
+        {
+            timer = setInterval("show()",1000)
+        }
+        function sto()
+        {
+            clearInterval(timer)
+        }
+        document.title="noerror"
+    </script>
+    <footer class="footer">
+         <div class="foot">
+                
+              <p class="email">Email:rawattanuja197@gmail.com</p>
+       </div>
+            <div class="end">
+                
+        <P class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></P>
+            </div>
+        </footer>
+    
+</body>
+</html>
