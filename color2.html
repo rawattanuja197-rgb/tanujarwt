@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+      Color Slider
+    </h1>
+    <input type="color" id="mycolor"><br>
+    <input type="range" min="20" max="255" value="50"id="red">
+    <br><br>
+    <input type="range" min="20" max="255"  value="50" id="green">
+    <br><br>
+    <input type="range" min="20" max="255" value="50" id="blue">
+<script>
+    var t 
+    var r,g,b,c
+    var d = document.getElementById("mycolor")
+    var red = document.getElementById("red")
+    var blue = document.getElementById("blue")
+    var green = document.getElementById("green")
+    d.onchange = function()
+    {
+        document.body.style.background=this.value
+        
+    }
+    red.onchange = function(){
+        document.title= this.value
+        c2=`rgb(${red.value},${green.value},${blue.value})`
+document.body.style.background= c2
+    }
+    green.onchange = function(){
+        document.title= this.value
+        c2=`rgb(${red.value},${green.value},${blue.value})`
+        document.body.style.background=c2
+
+    }
+    blue.onchange = function(){
+        document.title=this.value
+        c2=`rgb(${red.value},${green.value},${blue.value})`
+        document.body.style.background=c2
+    }
+</script>
+<footer>
+    <div class="foot">
+ <p class="email">Email:rawattanuja197@gmail.com</p>
+    </div>
+    <div class="end">
+        <p class="copyright">&copy:Tanuja Rawat 2026|All Right Reserved</p>
+    </div>
+</footer>
+</body>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    input{
+        margin-left: 5%;background: pink;border-radius: 30px;padding: 2px;
+    }
+    h1{
+        text-align: center;
+        color: black;background: pink;margin-bottom: 50px;
+        padding: 10px;border-bottom-right-radius:20px ;border-bottom-left-radius: 20px;
+    }
+    .end{
+        text-align: center;
+        background: rgb(249, 137, 156);
+
+    }.foot{text-align: center
+    ;margin-top: 70px;padding: 5px;
+    background: pink;}
+</style>
+</html>

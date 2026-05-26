@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{ padding: 0%;
+    margin: 0%;}
+.pic{box-shadow: rgba(195, 108, 108, 0.681) 5px 5px 10px ;
+    width: 30%;margin-left: 20px;
+    margin: 10px;height: 400px;transition: 0.50s;cursor: pointer;border-radius: 20px;
+}h1{
+    text-align: center;
+    color: white;margin:20px;
+    background: #E36A6A;padding: 20px;
+    border-radius: 20px;border: #FFB2B2 dotted 4px;
+}
+h1:hover{
+    transition: 0.3s;
+    padding-left:2%;
+    margin-left: 2%;
+    border: #E36A6A dotted;
+    background: #FFB2B2;
+    color: rgb(226, 94, 94);
+}
+body{
+    background: #FFB2B2;;
+}
+.foot{
+    background: #E36A6A;padding: 8px;
+    text-align: center;color: rgb(38, 2, 2);
+}.end{
+    background: #e25656;text-align: center;padding: 4;color: rgb(38, 2, 2);
+    
+}
+@media(max-width:600px){
+    .pic{box-shadow: rgba(195, 108, 108, 0.681) 5px 5px 10px ;
+    width: 80%;margin-left: 20px;
+    margin: 25px;height: 400px;transition: 0.50s;cursor: pointer;border-radius: 20px;
+}}
+</style>
+<body>
+    <h1>
+        Loop in HTML(forloop)
+    </h1>
+    <script>
+        //creating instance of image class
+        function preload()
+        {
+            
+            for ( var i = 1;i<=10;i++)
+        {
+            var p = new Image()
+            document.body.appendChild(p)
+            p.className="pic"
+            p.src="images/f"+i+".jpg"
+
+            p.onmouseover =function()
+            {
+                this.style.width="35%"
+            }
+        p.onmouseout=function(){
+            this.style.width="30%"
+        }
+        }}
+        document.addEventListener("load",preload())
+        
+    </script>
+</body>
+<footer>
+    <div class="foot">
+     <p class="email">Email:rawattanuja197@gmail.com</p>
+    </div>
+    <div class="end">
+        <p class="copyright">&copy:Tanuja Rawat 2026|All Right Reserved</p>
+
+    </div>
+</footer>
+</html>
