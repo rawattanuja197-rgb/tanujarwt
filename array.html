@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">    
+<title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color:#FFB2B2;
+    }
+    h1{font-family: "Spicy Rice", serif;
+  font-weight: 200;
+  font-style: normal;
+        padding: 15px;font-size: 40px;
+        text-align: center;
+        color: white;
+        margin-bottom: 5%;
+        background-color: #E36A6A;
+        border-bottom-left-radius:30px ;border-bottom-right-radius:30px ;
+
+    }
+    h2{
+        font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+text-align: center;
+width: 80%;margin: 1%;
+margin-left: 10%;padding: 1%;
+font-size: 30px;border: 3px #E36A6A  dotted;
+    }
+    h2:hover{
+         transition: 0.3s;
+         background-color: rgb(226, 94, 94);
+         color: white;
+         border-radius: 20px;border:#FFB2B2 dotted 5px;
+        }
+        .foot{
+            text-align: center;background-color: #E36A6A;
+            color: white;
+            padding: 3%;
+            margin-top: 5%;}
+            .end{
+                background-color: #b54545;color: white;
+                padding: 2%;
+                text-align: center;
+            }
+</style>
+<body>
+    <h1>Array in HTML</h1>
+    <script>
+        //index array
+        var mycolor = new Array(5)
+        //mycolor[1]=prompt("enter color","tan")
+        mycolor[3]="green"
+        mycolor[0]=true
+        mycolor[4]=29393
+
+
+        //alert(mycolor[4])
+        //document.bgColor=mycolor[1]
+        //alert(mycolor)
+        //document.write("<h1>Todays color = "+mycolor[3])
+            var Weekname=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+            //alert(Weekname.length)
+            //document.write(Weekname)
+            //document.write(Weekname[3])
+            //document.write("Today is "+Weekname[0])
+
+            for(var i = 0;i<Weekname.length;i++){
+                document.write("<h2>")
+                    document.write(Weekname[i])
+                    document.write("</h2>")
+            }
+            document.title="Array"
+    </script>
+</body>
+<footer>
+    <div class="foot">
+        <p class="Email">Email:rawattanuja197@gmail.com</p>
+    </div>
+    <div class="end">
+        <p class="copyright">
+            &copy:Tanuja Rawat 2026|All Right Reserved
+        </p>
+
+    </div>
+</footer>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    pic{width:50%;}
+button{
+    padding: 10px;font-size: 20px;border-radius: 20px;
+    background-color: #FFB2B2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.455);border: none;
+    margin: 10%;
+}
+h1{
+   font-family: "Spicy Rice", serif;
+  font-weight: 200;
+  font-style: normal;color: white;
+        padding: 15px;font-size: 40px;border: #FFB2B2 dashed 4px;border-radius: 20%;
+}
+body{background-color: #E36A6A;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+</style>
+<body onLoad="showadd()">
+ <h1> 
+    Window Class Open Function
+ </h1>
+    <button id="b1">Open Window
+    </button>
+    <script>
+        //using window class opwn function
+
+        var b = document.getElementById("b1");
+        function show_window(){
+            var w = open("index.html","mywindow", "left=400,top=200,width=800,height=600")
+        }
+        b.onclick= show_window;
+        
+         var myw = open("", "w", "width=600,height=600");
+       
+        
+    </script>
+    
+</body>
+</html>
