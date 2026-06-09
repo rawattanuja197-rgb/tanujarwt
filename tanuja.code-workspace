@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../tan"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "tanuja"
+	}
+}

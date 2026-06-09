@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<style>
+#box
+{
+    margin: auto;
+    background: pink;
+    width: 800px;
+}
+.pic{
+    width: 400px;
+    height: 400px;
+   // margin: 1px;
+    transition: 0.50s;
+    cursor: pointer;
+    position: relative;
+}
+#mask{
+    background: 400px;
+    width: 400px;
+    height: 630px;
+    background: black;
+    margin: auto;
+    overflow: hidden;
+}
+#slider{
+    margin:500px;
+    width:99px;
+}
+</style>
+<body>
+    <div id="mask">
+        <div id="box">
+            <img src="images/f5.jpg" class="pic">
+             <img src="images/f10.png" class="pic">
+              <img src="images/f11.png" class="pic">
+               <img src="images/f8.jpg" class="pic">
+                <img src="images/f7.jpg" class="pic">
+                 <img src="images/f6.jpg" class="pic">
+
+        </div>
+        <input type="range" min="0" max="600" id="slider" oninput="move()">
+        </div>
+    <input type="color" oninput="document.body.style.background=this.value">
+    <script>
+        function move(){
+            var slider = document.getElementById("slider");
+            var box = document.getElementById("box");
+            box.style.marginLeft = -slider.value + "px";
+        }
+    </script>
+</body>
+</html>
