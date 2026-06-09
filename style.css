@@ -1,141 +1,704 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+    margin: 0%;
+    padding: 0%;
 }
 html{
     scroll-behavior: smooth;
 }
 .header{
-min-height: 100vh;
-width: 100%;
-background-color: #000000;
-background-image: linear-gradient(#A98B76,#F3E4C9);
-background-position: center;
-background-size:cover;
-position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(238, 238, 93, 0.839),rgba(238, 238, 93, 0.839)),url(images/a2.jpg);
+    background-size: cover;
+    position: relative;
 }
-
 nav{
-    display: flex ;
-    padding: 2% 6%;
+    display: flex;
+    padding: 15px 15px;
+    
     justify-content: space-between;
-    align-items: center;
-   
-    margin: auto;
 }
+nav img{
+    width: 150px;
 
+}
 .nav-links{
-    flex:1;
-    text-align: center;
-    box-shadow: 2px 5px 5px rgb(67, 62, 62);
-    cursor: pointer;
+    flex: 1;
+    text-align: right;
+
 }
 .nav-links ul li{
     list-style: none;
-    display:inline-block;
-    padding: 8px 12px;
-    position: relative;
+    display: inline-block;
+    position:relative;
+    padding:20px 5px ;
 }
 .nav-links ul li a{
-    color:#000000;
+    color: black;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
 }
+
 .nav-links ul li::after{
     content: '';
-    margin: auto;
-    background:#ffffff;
     width: 0%;
-    height:2px;
+    height: 2px;
+    background-color: #f44336;
     display: block;
-    transition: 0.50s;
+    margin: auto;
+    transition: 0.5s;
 }
 .nav-links ul li:hover::after{
     width: 100%;
- 
- 
+
 }
 
 .text-box{
     width: 90%;
     position: absolute;
+    color: rgb(32, 31, 31);
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align:center;
-   
+    left:50%;
+   transform: translate(-50%,-50%);
+ 
+}
+p span {color: rgb(227, 13, 13);
+    font-weight: bold;
 
 }
 .text-box h1{
     font-size: 62px;
-}
-.text-box h1{
-    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 11px;
+       
+  font-family: "Audiowide", sans-serif;
+  font-weight: 300;
+  font-style: normal;margin-top: 4%;
 
+
+}
+.text-box h3{
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 .text-box p{
-    margin:10px 0 40px;
-    font-size: 15px;
-    color: #000000;
-}
-.view{
-    display: inline;
-    text-decoration: none;
-    color: #000000;
-    border:1px solid #000000 ;
-    padding: 12px 34px;
-    font-size: 13px;
-   background: transparent;
-   position: relative; 
-   cursor: pointer;
-   transition: 0.50s;
-}
-.view:hover{
-    border: 1px solid #9c8280;
-    background:#ffffff ;
-    transform: 1.10s;
-    text-decoration:underline;color:rgb(251, 251, 251);}
-}
-footer{
-   display: flex ;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer{flex:1;
-    text-align: center;
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 25px;line-height: 1.2;
+ font-weight: 300;
+ margin-top: 20px;
 
 }
-.footer ul li{list-style: none;
-    display:inline-block;
-    padding: 8px 12px;
+.visit{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    background: transparent;
     position: relative;
+    cursor: pointer;
+    margin-top:30px ;
+   margin-left: 45%;
 
 }
-.footer ul li a{
-     color:#000000;
-    text-decoration: none;
-    font-size: 16px;}
-
-.footer ul li::after{
-    content: '';
+.visit:hover{
+    border: #f44336;
+    background: #f44336;
+    color: white;
+    transition: 1s ;
+}
+/*course*/
+.course{
+    width: 80%;
     margin: auto;
-    background:#A98B76;
-    width: 0%;
-    height:2px;
-    display: block;
+    text-align: center;
+    padding-top:100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 900;
+       font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal
+
+}
+p{
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px;
+}    
+ .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+ }
+ .course-box{
+    width: 350px;
+    background: #dbd9d9;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 13px;
+    //box-sizing: border-box;
+    
+
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px ;
+    font-size: 20px;
+
+}
+.course-box:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.438);
+    transition: 0.5s;
+
+}
+.Faculty{
+    width: 100%;
+    //margin: auto;
+    text-align: center;
+    padding-top:50px;
+    background: #eeecec;
+
+}
+.Faculty p{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: -60px;
+    margin-top: 15px;
+    
+}
+a:link{color:rgb(0, 0, 0);text-decoration:none;}
+a:visited{color:rgb(0, 0, 0);}
+.facultybox{
+    /*border-radius: 10px;*/
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    //flex-basis:35% ;
+    
+}
+ .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 10;
     transition: 0.5s;
 }
-.footer ul li:hover::after{
+.layer:hover{
+     background: rgba(226,0,0,0.7);
+}
+.layer1{
+      background: transparent;
+    height: 95%;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 10;
+    transition: 0.5s;
+}
+.layer1:hover{
+     background: rgba(226,0,0,0.7);
+}
+.facultybox1{
+      margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width:30% ;
+}
+.layer h1{
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+   
 
 }
-.copyright{
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: -25px;
+    
+}
+.layer1 h1{
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover h1{
+    bottom: 49%;
+   
+    
+}
+.layer1:hover h1{
+    bottom: 49%;
+    
+    
+}
+.layer2{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 10;
+    transition: 0.5s;
+}
+.layer2:hover h1{
+    bottom: 49%;
+    
+    
+}
+.layer2:hover{
+     background: rgba(226, 226, 0, 0.7);
+}
+.layer2 h1{
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    transition: 0.5s;
+   }
+   .ro{
+    display: flex;
+   }
+   .choose {
+    background: #ffffffc0;
+    height: 600px;
+    text-align: center;
+    padding-top: 10px;
+
+
+   }
+   .choose h1{
     text-align: center;
     margin-bottom: 10px;
+   }
+ 
+   .choosey img{
+    margin-top: 10px;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+   .choosey h3{
+
+    padding: 0%;
+    margin-top: 16px;
+    margin-bottom: 15px;
+
+
+   }
+   .choosey p{padding: 0;
+     margin-top: -10px;
+    }
+    .ca{
+        margin: auto ;
+        margin-top: -30px;
+        
+        background-image: linear-gradient(rgba(238, 238, 93, 0.839),rgba(238, 238, 93, 0.839)),url(images/a2.jpg);
+        background-position: center;
+        background-size: cover;
+        
+        text-align: center;
+        padding: 100px 0;
+    }
+    .ca h1{
+        color: rgb(32, 32, 32);
+        margin-bottom: 40px;
+        padding: 0;
+        
+
+    }
+    .visit2{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top:30px ;
+   
+
 }
-.email{
+.visit2:hover{
+    border: #f44336;
+    background: #f44336;
+    color: white;
+    transition: 1s ;
+}
+.visit3{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top:30px ;
+   
+
+}
+.visit3:hover{
+    border: #f44336;
+    background: #f44336;
+    color: white;
+    transition: 1s ;
+}
+.aboutus{margin-top: 130px;
+    background-color: #dbd9d9;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+
+.text-box h2{
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;margin-left: 25%;padding-top: 2%;
+}
+.end{
+    background: #070117;padding: 5px;color: white;
+}
+.ri-close-line{display: none;}
+.ri-menu-line{display: none;}
+
+
+
+   @media screen and (max-width: 600px){
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+   
+    .header{
+        background-image: linear-gradient(rgba(238, 238, 93, 0.839),#f9f9b9e3);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        object-fit: contain;
+        min-height: 100vh;
+        width: 100%;
+        
+    }.text-box h2{
+font-family: "Smythe", system-ui;
+  font-weight: 500;font-size: 21px;
+  font-style: normal;margin-left:6%;
+margin-top: -30px;  }
+            .text-box h1{
+        font-size: 35px;
+        margin-top: 90px;
+        margin-left: 7%;
+    }
+    .ab{
+        display: inline;
+    }
+    .text-box h3{
+        margin-left: 36%;
+    }
+    .text-box p{display: none;
+        font-size: 18px;
+        margin-top: -20px;
+        line-height: 21px;
+    }
+    .visit{
+        
+        margin-left: 30%;
+    }
+    .row{
+        flex-direction: column;
+        
+       
+    }
+    .course-box{
+        width: 90%;
+}
+    .course{
+        margin-top: -10%;
+        width: 80%;
+    }
+    .course h1{
+        font-size: 35px;
+    }
+    .course p{
+        font-size: 17px;
+    }.Faculty h1{
+        font-size: 28px;
+    }
+    .Faculty p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .facultybox1{
+      margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width:100% ;
+}
+.layer1:hover{
+    height: 100%;
+}
+.text-box h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-top: -20px;
+
+}
+.ro{
+    display: block;
+}
+.choose{
+    height: 1300px;
+}
+.ca h1{
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+.footer{
+    
     text-align: center;
+    padding: 30px;
+}
+.footer h4{
+    margin-bottom: 2px;
+    margin-top: 20px;font-size: 25px;
+    font-weight: 600;
+}
+.footer p{font-size: 18px;margin-bottom: 5%;}
+.icons{
+    font-size: 20px;
+}
+.end{
+    background: #070117;padding: 2%;color: white;
+}
+.nav-links ul li{
+    display: block;color: white;
+}
+.nav-links{position: absolute;
+background-color: #d6473a;
+height: 100vh;
+top: 0;
+right: -200px;
+width: 200px;
+text-align: left;
+z-index: 2;
+transition: 1s ;}
+
+   .ri-close-line{display: block;
+color: white;margin: 10px;
+font-size: 22px;
+cursor: pointer;}
+  .ri-menu-line{display: block;
+margin: 10px;
+font-size: 22px;
+cursor: pointer;}
+.nav-links ul{
+    padding: 30px;
+    text-align: center;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 60%;
+
+}
+body{overflow-x: hidden;}}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+ 
+   
+    .choosey h3{
+        font-size: 25px;   }
+    .choosey p{
+        font-size: 20px;
+    }
+    .aboutus p{
+        font-size: 20px;line-height: 1.5;
+    }
+    .row{
+        flex-direction: column;
+        
+       
+    }
+    .course-box{
+        width: 90%;
+}
+    .course{
+        margin-top: -10%;
+        width: 80%;
+    }
+    .course h1{
+        font-size: 35px;padding-top: 20px;
+    }
+    .course p{
+        font-size: 20px;line-height: 1.5;
+    }.Faculty h1{
+        font-size: 28px;
+    }
+    .Faculty p{
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .facultybox1{
+      margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width:100% ;
+}
+.layer1:hover{
+    height: 100%;
+}
+.text-box h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-top: -20px;
+
+}
+.ro{
+    display: block;
+}
+.choose{
+    height: 1300px;
+}
+.ca h1{
+    font-size: 30px;
+    margin-bottom: -20px;
+}   
+.text-box h1{
+    font-size: 52px;
+    margin-bottom: 10px;
+    margin-left: 11px;
+       
+  font-family: "Audiowide", sans-serif;
+  font-weight: 300;
+  font-style: normal;margin-top: 20%;
+
+
+}
+.text-box h3{
+    font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;font-size: 35px;
+}
+.text-box p{
+  font-family: "Smythe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 24px;line-height: 1.2;
+ font-weight: 300;
+ 
+
+}
+   .visit{
+        
+        margin-left: 40%;margin-bottom: 5%;
+    }
+    .text-box h2{
+        font-size: 20px;
+        margin-left: 14%;
+    }
+    
+.footer{
+    width: 85%;
+    text-align: center;
+    padding: 30px;
+}
+.footer h4{
+    margin-bottom: 2px;
+    margin-top: 20px;font-size: 30px;
+    font-weight: 600;
+}
+.footer p{font-size: 20px;margin-bottom: 5%;}
+.icons{
+    font-size: 30px;
+}
+.end{
+    background: #070117;padding: 2%;color: white;
+}
+
+
+.nav-links ul li{
+    display: block;color: white;
+}
+.nav-links{position: absolute;
+background-color: #d6473a;
+height: 100vh;
+top: 0;
+right: -200px;
+width: 200px;
+text-align: left;
+z-index: 2;
+transition: 1s ;}
+
+   .ri-close-line{display: block;
+color: white;margin: 10px;
+font-size: 22px;
+cursor: pointer;}
+  .ri-menu-line{display: block;
+margin: 10px;
+font-size: 22px;
+cursor: pointer;}
+.nav-links ul{
+    padding: 30px;
+    text-align: center;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 60%;
+
+}
+body{overflow-x: hidden;}
 }
