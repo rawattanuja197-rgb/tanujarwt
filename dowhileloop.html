@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:link{color:rgb(255, 255, 255);text-decoration:none;}
+a:visited{color:rgb(255, 255, 255);}
+    *{
+        padding: 0%;
+        margin: 0%;
+
+    }
+    header{
+        text-align: center; text-align: center;
+       font-family: "Rye", serif;
+  font-weight: 400;font-size: 40px;
+  font-style: normal;color: white;
+        background-color: #E36A6A;padding: 5px;
+    }
+    h1{
+text-align: center;
+background-color: #e36a6aae;
+margin: 30px;width: 30%;
+
+    }
+    h1:hover{
+        background-color: #E36A6A;border: dashed 3px #f1e3e3;transition: 0.3s;border-radius: 20px;
+    }
+    body{
+        background-color: #FFB2B2;
+    }
+    .foot{ font-family: "Rye", serif;margin-top: 400px;
+  font-weight: 400;background-color: #f99696;color: white;text-align: center;font-size: 18px;}
+    .end{ font-family: "Rye", serif;
+  font-weight: 400;background-color: #E36A6A;text-align: center;
+        font-size: 18px;color: white;
+
+    }
+    @media(max-width:600px){
+        h1{
+            font-size: 25px;
+        }
+        header{
+            font-size: 30px;
+        }
+        .end{font-size: 15px;}
+        .foot{font-size: 15px;margin-top: 300px;}
+    }
+</style>
+<body>
+    <!--<h1><a href="ddata.pdf">Download file</a></h1>-->
+   
+   <header>click to download file </header>
+   <script>
+        var pw = "paneermomos"
+        var response;
+        var turn = 0
+
+        var turn = 0
+        do
+        {
+            response = prompt("Enter password to Download..")
+            if(response===pw)
+        {
+            alert("😁👍Valid password")
+            document.write("<h1><a href='images/html.pdf'>Download File</a></h1>")
+            break;
+        }
+        if(turn>=3)
+        {
+           alert("🥲😭Access Denied. Try after some time.")
+        }
+        turn++
+    }while(turn<=3)
+        document.title=
+        "password"
+        
+    </script>
+    <footer>
+        <div class="foot"><p class="email">Email:rawattanuja197@gmail.com</p></div>
+        <div class="end"><p class="copyright">&copy; Tanuja Rawat 2026|All right reserved.</p></div>
+    </footer>
+</body>
+</html>

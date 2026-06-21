@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+</head>
+<style>
+    *{
+        padding: 0%;margin: 0%;
+    }
+    header{
+        text-align: center;
+        font-size: 40px;background-color: #E36A6A;color: black; font-family: "Unkempt", cursive;
+  font-weight: 700;margin-top: 5px;
+  font-style: normal;color: white;padding: 8px;border-radius: 20px;
+
+    }
+    body{
+        background-color: #FFB2B2;
+    }
+    .banner{
+        width: 700px;
+        height: 600px;
+        margin: auto;
+        overflow: hidden;border-radius: 20px
+    }
+    .banner img{
+        width: 100%;
+        height: 100%;border-radius: 20px;margin-top: 20px;
+    }
+    .banner img .active{
+display: block;
+    }
+    .radios{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .end{font-family: "Unkempt", cursive;
+  font-weight: 700;
+        background-color: #E36A6A;text-align: center;padding: 1px;color: white;
+    }
+    .foot{margin-top: 20px;font-family: "Unkempt", cursive;
+  font-weight: 700;
+        background-color: #e36a6a94;color: white;text-align: center;padding:2px;
+    } @media (max-width: 600px){
+        header{
+            font-size: 30px;
+            margin: 10px;
+        }
+        .banner{
+             width: 300px;
+        height: 300px;
+        margin: auto;
+        overflow: hidden;border-radius: 20px
+        }
+    }
+</style>
+<body onload="show()">
+    <header>
+        Radio button banner
+    </header>
+    <div class="banner">
+        <img src="images/z1.jpg" id="p" class="active"></div>
+        <div class="radios">
+            <input type="radio" name="slide" id="r1">
+            <input type="radio" name="slide" id="r2">
+            <input type="radio" name="slide" id="r3">
+            <input type="radio" name="slide" id="r4">
+</div>
+<script>
+    var p = document.getElementById("p");
+    var s = document.getElementsByName("slide");
+    var c = 0;
+    s[c].checked=true;
+    var t;
+    function show()
+    {
+        if(c<=s.length -1)
+    {
+        c++
+    }
+    else if(c=5){
+        c =  1
+    }
+    p.src="images/z"+c+".jpg";
+
+    s[c-1].checked=true;
+    t = setTimeout("show()",1000)
+    }
+    s[0].addEventListener("click",()=>{
+        clearTimeout(t);
+        setTimeout(p.src='images/z1.jpg',5000);
+        c=1
+        setTimeout("show()",6000);
+    })
+
+        s[1].addEventListener("click",()=>{
+        clearTimeout(t);
+        setTimeout(p.src='images/z2.jpg',5000);
+        c=1
+        setTimeout("show()",6000);
+    })
+        s[2].addEventListener("click",()=>{
+        clearTimeout(t);
+        setTimeout(p.src='images/z3.jpg',5000);
+        c=1
+        setTimeout("show()",6000);
+    })
+        s[3].addEventListener("click",()=>{
+        clearTimeout(t);
+        setTimeout(p.src='images/z4.jpg',5000);
+        c=1
+        setTimeout("show()",6000);
+    })
+   
+
+</script>    
+<footer>
+    <div class="foot">
+        <p class="email">Email:rawattanuja197@gmail.com</p>
+    </div>
+    <div class="end">
+        <p class="copyright">&copy;Tanuja Rawat 2026|All Right Reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Change</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    .foot{font-family: "IM Fell Double Pica", serif;
+  font-style: italic;
+    text-align: center;margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: rgb(237, 229, 229);font-size: 15px;padding: 5px;
+}
+.end{
+    font-family: "IM Fell Double Pica", serif;
+  font-style: italic;
+  text-align: center;padding: 1px;
+    background-color: rgb(39, 38, 38);
+    color: rgb(237, 229, 229);font-size: 15px;   
+}
+    h1{
+        text-align: center;
+       font-family: "Rye", serif;
+  font-weight: 400;font-size: 40px;
+  font-style: normal;
+    }
+    p{
+        font-family: "IM Fell Double Pica", serif;
+  font-weight: 400;font-size: 30px;padding: 20px;
+  font-style: italic;
+    }
+
+:root 
+{
+--dark:rgb(22, 22, 22);
+--light:rgb(237, 229, 229);
+--tcolor:white;
+}
+button{
+    font-size: 26px;
+    margin: 20px;
+    border-radius: 8px;border: 1px solid rgb(52, 50, 50) ;
+}
+@media(max-width:600px){
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .end{font-size: 10px;}
+    .foot{font-size: 10px;}
+}
+</style>
+<body>
+
+   <button id="b">
+    🌚
+   </button> 
+   <script>
+    var b = document.getElementById("b")
+    b.onclick = function(){
+        if(b.innerHTML=="🌚")
+    {
+        b.innerHTML ="🌞"
+        document.body.style.background="var(--dark)"
+        document.body.style.color="var(--light)"
+
+    }
+    else{
+        b.innerHTML="🌚"
+        document.body.style.background="var(--light)"
+        document.body.style.color="var(--dark)"
+       
+    }
+    }
+   </script>
+   <h1>
+    COLOR MODE
+   </h1>
+   <p>
+    Dark mode and light mode are features available on phones, laptops, computers, and other digital devices to improve the user experience. Light mode displays dark text on a bright background and is generally easier to read in well-lit environments. Dark mode shows light text on a dark background, which can be more comfortable in low-light conditions and may reduce screen glare. On devices with OLED or AMOLED screens, dark mode can also help save battery power because dark pixels use less energy. These modes allow users to choose the display setting that best suits their comfort, environment, and personal preference, making digital devices more accessible and user-friendly.
+   </p>
+   <footer>
+    <div class="foot">
+         <h2 class="email">Email:rawattanuja197@gmail.com</h2>
+    </div>
+ <div class="end">
+ <h2 class="copyright"><u>&copy; Tanuja Rawat 2026| All right reserved.</u></h2>
+ </div>
+   </footer>
+</body>
+</html>

@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
 </head>
 <style>
+    *{padding: 0%;margin: 0%;}
 #box
 {
     margin: auto;
-    background: pink;
-    width: 800px;
+   
+    width: 10px;display: flex;
 }
 .pic{
     width: 400px;
-    height: 400px;
+    height: 450px;
    // margin: 1px;
     transition: 0.50s;
     cursor: pointer;
     position: relative;
 }
+body{
+       overflow: hidden;
+}
+
 #mask{
-    background: 400px;
-    width: 400px;
-    height: 630px;
-    background: black;
-    margin: auto;
+    background: white;
+    width: 100%;
+    height: 600px;
     overflow: hidden;
+    margin-bottom: -100px;
+   
+    
+}
+header{margin-bottom: 40px;
+    font-size: 50px;
+    text-align: center;font-size: 40px;font-family: "Rye", serif;
+  font-weight: 400;background-color:  #E36A6A;color: white;
+  padding :10px;
+
+}
+.slider img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 #slider{
-    margin:500px;
-    width:99px;
+    margin-top: 10px;
+    
+    background-color: pink;
+    width: 50%;margin-left: 25%;
 }
+.end{background-color:#E36A6A;padding: 3px; text-align: center;color: white;}
+.foot{background-color: #FFB2B2;text-align: center;color: white;padding :6px;}
 </style>
 <body>
+    <header> Image Slider </header>
     <div id="mask">
         <div id="box">
             <img src="images/f5.jpg" class="pic">
@@ -42,17 +67,21 @@
                <img src="images/f8.jpg" class="pic">
                 <img src="images/f7.jpg" class="pic">
                  <img src="images/f6.jpg" class="pic">
-
+</div>
         </div>
-        <input type="range" min="0" max="600" id="slider" oninput="move()">
-        </div>
-    <input type="color" oninput="document.body.style.background=this.value">
+        <input type="range" min="0" max="600" value="0" id="slider" oninput="move()">
+       
     <script>
         function move(){
             var slider = document.getElementById("slider");
             var box = document.getElementById("box");
-            box.style.marginLeft = -slider.value + "px";
+            box.style.marginLeft = (-slider.value) + "px";
         }
     </script>
+<footer>
+    <div class="foot"><p>Email:rawattanuja197@gmail.com</p></div>
+<div class="end"><p>&copy;Tanuja Rawat 2026|All right reserved</p></div>
+</footer>
 </body>
+
 </html>

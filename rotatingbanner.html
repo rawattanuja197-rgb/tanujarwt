@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }  body{
+        background-color: #FFB2B2;
+    }
+    .pic{
+        width: 45%;
+        height: 70%;
+        position: absolute;
+        left: 30%;
+        border-radius: 20px;
+        transition: 2s;
+        margin-top: 20px;
+    }
+    h1{background-color:#E36A6A ;padding: 10px;
+        margin-bottom: 20px;color: white;
+        text-align: center;font-family: "Unkempt", cursive;
+  font-weight: 700;font-size: 40px;
+    }
+    footer{
+        margin-top: 600px;
+    }
+    .end{background-color: #E36A6A; text-align: center;color: white;padding :3px;}
+    .foot{
+        text-align: center;background-color: #fc9999;color: white;padding :6px;
+    }
+    @media(max-width:600px){
+        .pic{
+            width: 60%;
+            height: 50%;
+            left: 20%;
+        }
+        h1{font-size: 30px;}
+        footer{margin-top: 500px;}
+        .foot{font-size: 15px;}
+        .end{font-size: 15px;}
+    }
+</style>
+<body>
+    <h1>Rotating Banner</h1>
+    <header>
+        <img src="images/z1.jpg" class="pic">
+        <img src="images/z2.jpg" class="pic">
+        <img src="images/z6.jpg" class="pic">
+        <img src="images/z5.jpg" class="pic">
+    </header>
+    <script>
+        var plist = document.getElementsByTagName("img")
+        var p1 = plist[3]
+        var p2 = plist[2]
+        var p3 = plist[1]
+        var p4 = plist[0]
+        var c = -1
+        function runbanner(){
+            switch(c)
+            {
+                case 0 : 
+                p1.style.transform="scale(0) rotate(360deg)"
+                p1.style.opacity=0
+                break;
+                 case 1 : 
+                p2.style.transform="scale(0) rotate(360deg)"
+                p2.style.opacity=0
+                break;
+                 case 2 : 
+                p3.style.transform="scale(0) rotate(360deg)"
+                p3.style.opacity=0
+                break;
+                 case 3 : 
+               
+                break;
+                 case 4 : 
+                p1.style.transform="scale(1) rotate(0)"
+                p2.style.transform="scale(1) rotate(0)"
+                p3.style.transform="scale(1) rotate(0)"
+                p4.style.transform="scale(1) rotate(0)"
+                p1.style.opacity=1
+                p2.style.opacity=1
+                p3.style.opacity=1
+                p4.style.opacity=1
+                break;
+            }
+            if(c<=plist.length)
+            {
+                c++
+            }
+            else{
+                c= 0
+            }
+            setTimeout("runbanner()",5000)
+        }
+        runbanner()
+    </script>
+</body>
+<footer>
+    <div class="foot"><p>Email:rawattanuja197@gmail.com</p></div>
+<div class="end"><p>&copy;Tanuja Rawat 2026|All Right Reserved</p></div>
+</footer>
+</html>

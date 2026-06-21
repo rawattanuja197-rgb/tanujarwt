@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    h1{
+        text-align: center;
+        background-color: #E36A6A;padding: 20px;
+        font-size: 40px;font-family: "Rye", serif;
+  font-weight: 400;color: white;
+  font-style: normal;border-bottom-left-radius: 20%;border-bottom-right-radius: 20%;
+    }
+    .mystyle{
+width: 450px;margin-top: 50px;
+height: 500px;
+box-shadow: rgba(0, 0, 0, 0.424) 10px 10px 10px ;
+padding: 5px;
+position: absolute;
+top: 10%;
+left: 35%;
+border-radius: 10px;
+    }
+    body{
+         background-color: #FFB2B2;
+    }
+    .mystyle img{
+border-radius: 20px;width: 100%;
+height: 90%;
+    }
+     button{
+        border-radius: 30%;padding:10px;font-size: 20px;background-color: #FFB2B2;color: white;
+    }
+    div{
+        background: white;
+    }
+    footer{
+        margin-top: 650px;
+    }
+    .foot{
+        background-color: #f69696;text-align: center;color: white;
+        font-size: 20px;font-family: "Rye", serif;
+  font-weight:400;
+    }
+    .end{
+        text-align: center;
+        background-color: #E36A6A;
+        font-size: 20px;
+        color: white;font-family: "Rye", serif;
+  font-weight:400;
+    }
+    @media (max-width: 600px){
+        .mystyle{
+            width: 300px;
+            height:300px;left:20%;top:20%;
+
+        }
+           .mystyle img{
+border-radius: 20px;width: 100%;
+height: 80%;
+    }
+    button{
+font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .end{font-size: 15px;padding: 2px;}
+    .foot{
+        font-size: 15px;padding: 5px;
+    }
+    footer{
+        margin-top: 550px;
+    }
+    }
+</style>
+<body>
+    <h1>
+        Popup 
+    </h1>
+  <script>
+    var p = document.createElement("div")
+    function show(){
+        document.body.appendChild(p)
+        p.className="mystyle"
+        p.innerHTML="<button onclick='body.removeChild(p)'style='margin-left:90%;font-size:20px;border:0;'>x</button>"
+        p.innerHTML+="<br/><img style='width:100%;padding-top:5px;' src='images/z1.jpg'>"
+        //setTimeout("closeadd()",10000)
+
+    }
+    var t =setTimeout("show()",2000)
+    function closeadd(){
+        document.body.removeChild(p)
+    }
+  </script>
+  <footer>
+    <div class="foot"><p class="email">Email:rawattanuja197@gamil.com</p></div>
+    <div class="end"><p class="copyright">&copy; Tanuja Rawat 2026|All right reserved.</p></div>
+  </footer>  
+</body>
+</html>

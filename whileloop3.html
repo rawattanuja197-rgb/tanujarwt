@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+       body{
+        background-color:#FFB2B2;
+    }
+h1{
+    font-family: "IM Fell Double Pica", serif;
+  font-style: italic;text-align: center;
+  background-color: #E36A6A;margin-bottom: 5%;
+  padding: 1%;color: white;font-size: 40px;border-bottom-right-radius:10% ;border-bottom-left-radius: 10%;
+
+}
+.foot{font-family: "IM Fell Double Pica", serif;font-size: 18px;
+  font-style: italic;text-align: center;margin-top: 5%;padding:5px;background-color: #fa9a9a;color: white;}
+.end{font-family: "IM Fell Double Pica", serif;font-size: 20px;
+  font-style: italic;text-align: center;padding: 3px;background-color: #E36A6A;color: white;}
+header{
+    width: 70%;height: 500px;margin: auto;
+
+}
+
+header img{
+    width: 100%;
+    height: 100%;border-radius: 20px;
+}
+@media(max-width:600px){
+    header{
+        width: 80%;height: 100%;
+    }
+}
+</style>
+<h1 id="m">Flower For </h1>
+<header>
+    <img id="pic" src="">
+
+</header>
+<body>
+    <script>
+        var d = new Date();
+        var m = document.getElementById("m")
+        var pic = document.getElementById("pic")
+        pic.src="iamges/f1.jpg"
+        var today=d.getDay()
+        
+        switch(today)
+        {
+            case 1: 
+            m.innerHTML+="Monday"
+            pic.src="images/f1.jpg"
+            break;
+
+            case 2:
+            m.innerHTML+="Tuesday"
+            pic.src="images/f2.jpg"
+            break;
+
+            case 3:
+            m.innerHTML+="Wednesday"
+            pic.src="images/f3.jpg"
+            break;
+
+
+            case 4:
+            m.innerHTML+="Thursday"
+            pic.src="images/f4.jpg"
+            break;
+
+            case 5:
+            m.innerHTML+="Friday"
+            pic.src="images/f5.jpg"
+            break;
+
+            case 6:
+            m.innerHTML+="Saturday"
+            pic.src="images/f6.jpg"
+            break;
+
+            case 0:
+            m.innerHTML+="Sunday"
+            pic.src="images/f7.jpg"
+            break;
+
+            default:
+                pic.src="images/f8.jpg"
+
+        }
+        document.title="switch"
+    </script>
+    <footer>
+        <div class="foot">
+            <p class="email">Email:rawattanuja197@gmail.com</p>
+        </div>
+        <div class="end">
+            <p class="copyright">&copy; Tanuja Rawat 2026|All Right Reserved.
+
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
