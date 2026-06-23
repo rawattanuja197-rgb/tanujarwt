@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;margin: 0%;
+    }
+    body{
+background-color: #FFB2B2;
+    }
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+#m,#m2{
+    width: 110px;
+    margin-top: 30px;
+    background-color: #E36A6A;
+    color:white;text-align: center;
+    padding: 18px;font-size: 20px;font-family: "Unkempt", cursive;
+  font-weight: 700;font-style: normal;
+}
+li{
+    list-style-type:none ;
+    padding: 10px;
+    cursor:pointer;
+}
+#m:hover{border-radius: 20px;transition: 0.3s;box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.573);}#m2:hover{border-radius: 20px;transition: 0.3s;box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.573)}
+li:hover{ width: 90px;padding-right: -90px;
+    color: #E36A6A;background-color: #f7a9a9;border-radius: 20px;transition: 0.3s;
+}
+.toggle{
+    display: none;
+}
+button{font-family: "Unkempt", cursive;margin-top: 30px;
+  font-weight: 700;font-style: normal;
+    font-size: 20px;border-radius: 20px;background-color: #f6e6e6;
+    border: 1px solid;padding: 12px;padding-left: 15px;padding-right: 15px;
+}
+
+h1{margin-top: 10px;margin-left: 20px;margin-right: 20px;
+    font-family: "Unkempt", cursive;padding: 16px;
+  font-weight: 700;font-style: normal;text-align: center;
+  font-size: 40px;background-color: #E36A6A;color: rgb(255, 249, 249);border-radius: 20px;
+}a:link{color
+    :white;text-decoration:none;}
+a:visited{color: white}
+.foot{margin-top:300px;text-align: center;background-color: #f69898;padding: 6px;color: #ffffff;}.end{padding: 3px;background-color: #E36A6A;text-align: center;color: #ffffff;}
+@media(max-width:600px){
+    h1{font-size: 30px;}
+    .foot{margin-top:200px;font-size: 13px;}.end{font-size: 13px;}
+}
+
+</style>
+<body>
+    <h1>
+        Toggle Menu
+    </h1>
+    <div id="nav">
+        <div>
+            <button onclick="show_hide_menu(event)" id="menu1">
+                Main
+            </button>
+            <ol id="m" class="toggle">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="practicee.html">Practice</a></li>
+                <li><a href=" https://rawattanuja197-rgb.github.io/tanujarawt/">Project</a></li>
+            </ol>
+        </div>
+        <div>
+            <button onclick="show_hide_menu(event)" id="menu2">
+               Work
+            </button>
+            <ol id="m2" class="toggle">
+                <li><a href="https://www.behance.net/tanujarawat1">Behance</a></li>
+                <li><a href=https://www.figma.com/proto/gAlHHm06QpBEAGApaqbjgo/Untitled?node-id=119-2&t=IRuMQpX5cqntJxkZ-1>Figma</a></li>
+                <li><a href="http://instagram.com">Instagram</a></li>
+            </ol>
+        </div>
+    </div>
+    <script>
+        var menu_visible = false;
+        var m1 = document.getElementById("m");
+
+        function show_hide_menu(event){
+            var mid = event.target.id
+            m1.classList.add("toggle");
+            m2.classList.add("toggle");
+            
+            switch(mid){
+                case "menu1":
+                    m1.classList.remove("toggle");
+                    break;
+                case "menu2":
+                    m2.classList.remove("toggle");
+                    break;
+            }
+        }
+        window.onclick = function(event){
+            if((event.target == "[object HTMLHtmlElement]")||(event.target == "[object HtmlHtmlElement]"))
+        {
+            m1.classList.add("toggle");
+            m2.classList.add("toggle");
+        }
+        }
+    </script>
+    <footer>
+        <div class="foot"><p>Email:rawattanuja197@gmail.com</p></div>
+        <div class="end"><p>&copy;Tanuja Rawat 2026| All Right Reserved</p></div>
+    </footer>
+</body>
+</html>
