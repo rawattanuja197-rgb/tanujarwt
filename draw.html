@@ -19,7 +19,13 @@
         }
         .foot{text-align: center;font-family: "Rye", serif;
   font-weight: 400;}.end{text-align: center;font-family: "Rye", serif;
-  font-weight: 400;}
+  font-weight: 400;
+}
+@media(max-width:600px){
+body{
+    overflow: hidden;
+}
+}
     </style>
     <h1>
         DRAW 
@@ -32,7 +38,8 @@
         var d = c.getContext("2d");
          c.width = window.innerWidth;
         c.height = window.innerHeight;
-         var red, green, blue ,drawcolor   
+         var red, green, blue ,drawcolor  
+         var drawmode = false 
 
         function f1(event)
         {
@@ -64,6 +71,8 @@
         }
             function draw(event)
             {
+                if(drawmode)
+            {
                 var x = event.pageX
                 var y = event.pageY
                 red = Math.round(Math.random()*255)
@@ -77,9 +86,15 @@
                 d.fillStyle = drawcolor
                 d.fill()
                 d.stroke();
+            }}
+            function f2(){
+                drawmode = (!drawmode)?true:false
+
+                document.title=drawmode
             }
             
             document.addEventListener("keydown",f1)
+            document.addEventListener("click",f2)
             document.addEventListener("mousemove",draw)
         
 
