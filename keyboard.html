@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var b = new Image()
+        b.src="https://i.pinimg.com/originals/cf/d1/da/cfd1daf10e4cd76f7ee675629ce2fe84.gif"
+        b.className="box"
+    </script>
+</head>
+<style>
+    .box{
+        width: 100px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 100;
+    }
+    #back{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    body{
+        overflow: hidden;
+    }
+</style>
+<body bgcolor="black">
+    
+    <img src="https://i.pinimg.com/736x/fc/fb/1d/fcfb1d1991733eeece521bc487c63f52.jpg" id="back">
+    <div id="box"></div>
+    <script>
+        var L = 10
+        var U = 10
+        var speed = 2
+
+        document.body.appendChild(b);
+        // document.title="ready"
+        var back = document.getElementById("back")
+
+        function f1(event)
+        {
+            var k = event.key
+            // document.title = k
+            switch(k)
+            {
+                case "ArrowLeft": 
+                b.style.transform="rotateY(180deg)"
+                if(L>10)
+            {
+                L-=speed
+                b.style.left = L+"px"
+                back.style.left=`-${L}px`
+            }
+
+            break;
+            case "ArrowRight":
+                
+
+            if(L<=window.innerWidth-130)
+            {
+                b.style.transform="rotate(0deg)"
+                L+=speed
+                b.style.left = L+"px"
+                back.style.left = `${-L}px`
+            }
+            break;
+            case "ArrowUp": 
+             
+
+            if(U>0)
+            {
+                U-=speed
+                b.style.top = U+"px"
+                back.style.top=`-${U}px`
+
+            }
+            break;
+            case "ArrowDown": 
+            if(U<=window.innerHeight-100)
+            {
+                U+=speed
+                b.style.top = U+"px"
+                back.style.top=`-${U}px`
+            }
+            break;
+            case "+": 
+            speed=(speed<20)?speed+=2:speed
+            document.title = speed
+            break;
+
+            case "-":
+                speed=(speed>2)?speed-=2:speed
+                // document.title = speed
+                break;
+        }
+            document.title = L+" "+R
+        }
+
+        document.addEventListener("keydown",f1)
+        // document.title = "No Error" 
+
+    </script>
+
+    
+</body>
+</html>

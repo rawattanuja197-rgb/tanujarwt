@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 10px;
+        color: rgb(158, 157, 157);
+    }
+    body{
+        background-color: black;
+    }
+    h1,h2,p{
+        text-align: center;
+    }
+    h2{
+        cursor: pointer;
+        margin-top: 5%;
+    }
+    button{
+        cursor: pointer;
+    }
+    #text2{
+        text-align: left;
+    }
+ 
+</style>
+<body>
+   <header>
+    <h1>
+        jQuery
+    </h1><hr>
+   </header>
+   <h2 class="text">What is jQuery?<button>Show/hide</button></h2>
+    <p id="text1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+    <br>
+    
+    <hr><h3 class="use">Used by:-</h3>
+    <p>
+        <ul class="use">
+            <li>Google</li>
+            <li>Microsoft</li>
+            <li>IBM (International Business Machine)</li>
+            <li>Netflix</li>
+        </ul>
+    
+    </p><br>
+    <h3>Purpose🤔:-</h3>
+    <p id="text2">Make much more easier to use JS on website.</p><br>
+    <h3>Can do following:-</h3>
+    <p>
+        <ul>
+            <li>HTML DOM Manipulation</li>
+            <li>CSS Manipulation</li>
+            <li>HTML event method</li>
+            <li>Effects and animation</li>
+        </ul>
+    </p>
+</body>
+<script>
+    $(document).ready(function()
+{
+    $(".text").click(function()
+    {
+        $("#text1").toggle("slow")
+    })
+    $("#text1").mouseover(function()
+    {
+        $(this).css({"background":"rgb(247, 233, 233)","color":"black"})
+    })
+    $("#text1").mouseout(function()
+    {
+        $(this).css({"background":"black","color":"gray"})
+    })
+}
+)
+</script>
+</html>
