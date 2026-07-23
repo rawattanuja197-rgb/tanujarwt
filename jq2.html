@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<style>
+        *{
+        color: rgb(180, 180, 180);
+        list-style: none;
+        }
+        body{
+            background-color: rgb(17, 17, 17);
+        }
+        li{
+            cursor: pointer;
+        }
+        
+        #p:hover{
+            color: white;
+            background-color: rgba(128, 128, 128, 0.533);
+            padding: 3px;
+            transition: 0.5s;
+        }
+        #p2:hover{
+            color: white;
+            background-color: rgba(128, 128, 128, 0.533);
+            padding: 3px;
+            transition: 0.5s;
+        }
+        #p3:hover{
+            color: white;
+            background-color: rgba(128, 128, 128, 0.533);
+            padding: 3px;
+            transition: 0.5s;
+        }
+        #social ol :hover{
+            background-color: rgba(128, 128, 128, 0.533);
+            color: white;
+            transition: 0.5s;
+            width: 90px;
+            padding: 3px;
+        }
+        #project ol :hover{
+            background-color: rgba(128, 128, 128, 0.533);
+            color: white;
+            transition: 0.5s;
+            width: 90px;
+            padding: 3px;
+        }
+        #practice ol :hover{
+            background-color: rgba(128, 128, 128, 0.533);
+            color: white;
+            transition: 0.5s;
+            width: 90px;
+            padding: 3px;
+        }
+        h1{
+            text-align: center;
+            margin: 5%;
+        }
+
+
+</style>
+<body>
+    <h1>
+        Toggle menu
+    </h1>
+    <ol>
+        <li>Home</li>
+        <li id="project"><span id="p">Project</span>
+        <ol>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <li>Project 4</li>
+        </ol>
+        </li>
+        <li id="practice"><span id="p2">Practice</span>
+            <ol>
+                <li>HTML</li>
+                <li>Javascript</li>
+                <li>Jquery</li>
+                <li>Bootstrap</li>
+            </ol>
+        </li>
+        <li id="social"><span id="p3">Social Media</span>
+            <ol>
+                <li>Youtube</li>
+                <li>instagram</li>
+                <li>twitter</li>
+                <li>facebook</li>
+            </ol>
+        </li>
+    </ol>
+    <script>
+            $(document).ready(function()
+        {
+            $("#social>ol").toggle(500)
+            $("#practice>ol").toggle(500)
+            $("#project>ol").toggle(500)
+        
+        
+            $("#project").click(function()
+        {
+            $("#project>ol").toggle(500)
+        })
+            $("#practice").click(function()
+        {
+            $("#practice>ol").toggle(500)
+        })
+            $("#social").click(function()
+        {
+            $("#social>ol").toggle(500)
+        })
+        })
+    </script>
+</body>
+</html>
