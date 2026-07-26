@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion menu</title>
+</head>
+<style>
+    *{
+        color: rgb(220, 220, 220);
+    }
+   body{
+    background-color: black;
+   }
+   #col1,
+   #col2,
+   #col3,
+   #col4{
+    cursor: pointer;
+    text-align: center;
+    padding: 1%;
+    width: 50%;
+    border-radius: 20px 2px ;
+    margin-left: 25%;
+    background-color: rgb(240, 240, 240);
+    color: rgb(32, 32, 32);
+   }
+   p{
+    padding: 1%;
+    width: 90%;
+    margin-left: 5%;
+
+   }
+   @media(max-width:600px){
+    #col1,
+   #col2,
+   #col3,
+   #col4{
+    font-size: 20px;
+   }
+   }
+</style>
+<body>
+    <div id="html">
+        <h1 id="col1">HTML</h1>
+        <div id="Html">
+        <p>HTML stands for HyperText Markup Language.
+It is the standard language used to create web pages.
+HTML provides the basic structure of a website.
+It uses different tags to organize content.
+Tags help display headings, paragraphs, images, and links.
+HTML is easy to learn for beginners.
+It works together with CSS and JavaScript.
+HTML documents start with the <!DOCTYPE html> declaration.
+The <html> tag is the root element of the page.
+The <head> section contains the page information.
+The <body> section contains visible content.
+HTML supports tables, lists, forms, and multimedia.
+It allows developers to add images and videos.
+Semantic HTML improves readability and accessibility.
+HTML is supported by all modern web browsers.
+It is not a programming language.
+It is a markup language used to describe content.
+HTML is essential for web development.
+Every website uses HTML as its foundation.
+Learning HTML is the first step toward becoming a web developer.</p>
+        </div>
+    </div> 
+    <div id="css">
+        <h1 id="col2">CSS</h1>
+        <div id="Css">
+            <p>CSS stands for Cascading Style Sheets.
+It is used to style HTML web pages.
+CSS controls the colors, fonts, and layouts.
+It makes websites look attractive and professional.
+CSS separates design from content.
+It helps create responsive websites.
+Selectors are used to target HTML elements.
+Properties and values define the appearance of elements.
+CSS can add margins, padding, and borders.
+It supports animations and transitions.
+Flexbox and Grid help create modern layouts.
+Media queries make websites mobile-friendly.
+CSS reduces the need for repeated styling.
+It improves the user experience of websites.
+CSS files can be linked externally to HTML.
+It also supports internal and inline styles.
+Modern browsers fully support CSS.
+CSS makes web pages visually appealing.
+It is an important part of front-end development.
+Learning CSS helps create beautiful and responsive websites</p>
+        </div>
+    </div>
+    <div id="js">
+        <h1 id="col3">Javascript</h1>
+        <div id="JS">
+            <p>JavaScript is a popular programming language for the web.
+It adds interactivity to websites.
+JavaScript works with HTML and CSS.
+It can respond to user actions like clicks.
+It is used to create dynamic web pages.
+JavaScript can change HTML content using the DOM.
+It can also modify CSS styles.
+Variables store data in JavaScript.
+Functions perform specific tasks.
+Loops help repeat actions automatically.
+Conditions allow decision-making in programs.
+JavaScript supports events like click and hover.
+It can validate form inputs.
+JavaScript is supported by all major browsers.
+It is widely used in web development.
+It can communicate with servers using APIs.
+JavaScript makes websites faster and more interactive.
+Many modern frameworks are based on JavaScript.
+It is an essential skill for front-end developers.
+Learning JavaScript helps build powerful web applications.</p>
+        </div>
+    </div>
+    <div id="jq">
+        <h1 id="col4">jQuery</h1>
+        <div id="JQ">
+            <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+                jQuery is a fast and lightweight JavaScript library.
+It makes JavaScript coding simpler.
+jQuery reduces the amount of code needed.
+It is easy for beginners to learn.
+jQuery uses the $ symbol to select elements.
+It simplifies DOM manipulation.
+It makes event handling easier.
+jQuery supports animations and effects.
+It can hide and show elements quickly.
+It helps create smooth user interactions.
+jQuery works across different web browsers.
+It simplifies AJAX requests.
+Many websites still use jQuery.
+It can add sliders and image galleries.
+jQuery plugins extend its functionality.
+It works together with HTML and CSS.
+It speeds up front-end development.</p>
+        </div>
+    </div>
+    <script>
+        $("#Html").hide()
+        $("#Css").hide()
+        $("#JS").hide()
+        $("#JQ").hide()
+        
+        $(document).ready(function(){
+            $("#Html").slideUp(500)
+            $("#JS").slideUp(500)
+            $("#Css").slideUp(500)
+            $("#JQ").slideUp(500)
+
+
+            $("#col1").click(function()
+        {
+            $("#Css").slideUp(500)
+            $("#JS").slideUp(500)
+            $("#JQ").slideUp(500)
+            $("#Html").slideToggle(500)
+
+        })
+            $("#col2").click(function()
+        {
+            $("#Html").slideUp(500)
+            $("#JS").slideUp(500)
+            $("#JQ").slideUp(500)
+            $("#Css").slideToggle(500)
+        })
+            $("#col3").click(function()
+        {
+            $("#Html").slideUp(500)
+            $("#Css").slideUp(500)
+            $("#JQ").slideUp(500)
+            $("#JS").slideToggle(500)
+        })
+            $("#col4").click(function()
+        {
+            $("#Html").slideUp(500)
+            $("#Css").slideUp(500)
+            $("#JS").slideUp(500)
+            $("#JQ").slideToggle(500)
+        })
+
+        })
+    </script>
+</body>
+</html>
