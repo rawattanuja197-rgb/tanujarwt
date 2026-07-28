@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
      <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +12,12 @@
 </head>
 <style>
     *{
-        color: rgb(220, 220, 220);
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
     }
    body{
-    background-color: black;
+     background-color: #FBF1FF;
    }
    #col1,
    #col2,
@@ -21,10 +27,17 @@
     text-align: center;
     padding: 1%;
     width: 50%;
-    border-radius: 20px 2px ;
+    /* border-bottom: 2px solid #502a59; */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 0.2%;
+     font-family: "Kavoon", serif;
+    font-weight: 400;
+     font-style: normal;
+    /* border-radius: 20px; */
     margin-left: 25%;
-    background-color: rgb(240, 240, 240);
-    color: rgb(32, 32, 32);
+    background-color: #e3d0ea;
+    color: rgb(49, 49, 49);
    }
    p{
     padding: 1%;
@@ -32,6 +45,46 @@
     margin-left: 5%;
 
    }
+   header{
+    text-align: center;
+    padding: 1%;
+    font-size: 40px;
+    background-color: #9871b2;
+    margin-bottom: 2%;
+    color: white;
+     font-family: "Londrina Shadow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bolder;
+
+   }
+   #Html,
+   #JS,
+   #JQ,
+   #Css{
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    width: 80%;
+    margin-left: 10%;
+    /* border-radius: 20px; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+
+   }
+   .foot{
+    background-color: #9871b2;
+    color: white;
+    text-align: center;
+    padding: 0.51%; 
+    margin-top: 5%; 
+}
+.end{
+    background-color: #3a1c36;
+    color: white;
+    text-align: center;
+    padding: 0.2%;
+}
    @media(max-width:600px){
     #col1,
    #col2,
@@ -42,6 +95,9 @@
    }
 </style>
 <body>
+    <header>
+        Accordion Menu
+    </header>
     <div id="html">
         <h1 id="col1">HTML</h1>
         <div id="Html">
@@ -140,6 +196,12 @@ It works together with HTML and CSS.
 It speeds up front-end development.</p>
         </div>
     </div>
+    <footer>
+        <div class="foot">
+            Email:rawattanuja197@gmail.com
+        </div>
+        <div class="end">&copy; Tanuja Rawat 2026|All right reserved</div>
+    </footer>
     <script>
         $("#Html").hide()
         $("#Css").hide()

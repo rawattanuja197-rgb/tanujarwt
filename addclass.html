@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        jQuery Classes :- addClass, removeClass, toggleClass
+    </div>
+    <h3>addClass & removeClass</h3>
+    <div class="box">
+    <div class="para">
+    <h1 id="col1">Html (Hyper Text Markup Language)</h1>
+        <p id="html">HTML stands for HyperText Markup Language.
+        It is the standard language used to create web pages.
+        HTML provides the basic structure of a website. 
+        It uses different tags to organize content.
+        Tags help display headings, paragraphs, images, and links.
+        HTML is easy to learn for beginners.
+        It works together with CSS and JavaScript.
+        HTML documents start with the <!DOCTYPE html> declaration.
+        The <html> tag is the root element of the page.
+        The <head> section contains the page information.
+        The <body> section contains visible content.
+        HTML supports tables, lists, forms, and multimedia.
+        It allows developers to add images and videos.
+        Semantic HTML improves readability and accessibility.
+        HTML is supported by all modern web browsers.
+        It is not a programming language.
+        It is a markup language used to describe content.
+        HTML is essential for web development.
+        Every website uses HTML as its foundation.
+        Learning HTML is the first step toward becoming a web developer.</p>
+    </div>
+        <h1 id="col2">Javascript</h1>
+        <div class="para">
+            <p id="js">JavaScript is a popular programming language for the web.
+        It adds interactivity to websites.
+        JavaScript works with HTML and CSS.
+        It can respond to user actions like clicks.
+        It is used to create dynamic web pages.
+        JavaScript can change HTML content using the DOM.
+        It can also modify CSS styles.
+        Variables store data in JavaScript.
+        Functions perform specific tasks.
+        Loops help repeat actions automatically.
+        Conditions allow decision-making in programs.
+        JavaScript supports events like click and hover.
+        It can validate form inputs.
+        JavaScript is supported by all major browsers.
+        It is widely used in web development.
+        It can communicate with servers using APIs.
+        JavaScript makes websites faster and more interactive.
+        Many modern frameworks are based on JavaScript.
+        It is an essential skill for front-end developers.
+        Learning JavaScript helps build powerful web applications.</p>
+        </div>
+            <h1 id="col3">jQuery</h1>
+            <div class="para">
+        <p id="jq">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+        jQuery is a fast and lightweight JavaScript library.
+        It makes JavaScript coding simpler.
+        jQuery reduces the amount of code needed.
+        It is easy for beginners to learn.
+        jQuery uses the $ symbol to select elements.
+        It simplifies DOM manipulation.
+        It makes event handling easier.
+        jQuery supports animations and effects.
+        It can hide and show elements quickly.
+        It helps create smooth user interactions.
+        jQuery works across different web browsers.
+        It simplifies AJAX requests.
+        Many websites still use jQuery.
+        It can add sliders and image galleries.
+        jQuery plugins extend its functionality.
+        It works together with HTML and CSS.
+        It speeds up front-end development.</p>
+            </div>
+    </div> 
+    <h3 style="margin-top: 5%;"> toggleClass</h3>
+     <div class="image">
+
+        <div class="box2">
+            <div class="boximg" style="background-image: url(https://i.pinimg.com/control1/1200x/75/87/df/7587df77ef521cf98057d0028ee983f1.jpg);">
+                  </div>
+        </div>
+          <div class="box2">
+            <div class="boximg" style="background-image: url(images/code.jpg); ">
+                  </div>
+        </div>
+         <div class="box2">
+            <div class="boximg" style="background-image: url(https://i.pinimg.com/control1/1200x/2e/60/df/2e60df82287ce87245ad8a3f862a8125.jpg);">
+                  </div>
+        </div>
+     </div>
+    <footer>
+        <div class="foot">
+            Email:rawattanuja197@gmail.com
+        </div>
+        <div class="end">&copy; Tanuja Rawat 2026|All right reserved</div>
+    </footer>
+    <script>
+
+        $("#html").hide()
+        $("#js").hide()
+        $("#jq").hide()
+
+
+        $(document).ready(function()
+    {
+        $("#html").slideUp(500)
+        $("#js").slideUp(500)
+        $("#jq").slideUp(500)
+
+
+
+        $("#col1").click(function()
+    {
+        $("#js").slideUp(500)
+        $("#jq").slideUp(500)
+        $("#html").slideToggle(500)
+    })
+
+        $("#col2").click(function(){
+            $("#html").slideUp(500)
+            $("#jq").slideUp(500)
+            $("#js").slideToggle(500)
+        })
+
+
+        $("#col3").click(function(){
+            $("#html").slideUp(500)
+            $("#js").slideUp(500)
+            $("#jq").slideToggle(500)
+        })
+
+        $("p").mouseover(function()
+     {
+         $(this).addClass("class ")
+    })
+
+        $("p").mouseout(function()
+    {
+      
+        $(this).removeClass("class ")
+     })
+
+
+
+         $("h1").mouseover(function()
+     {
+        $(this).addClass("class")
+      })
+
+
+         $("h1").mouseout(function()
+    {
+         $(this).removeClass("class")
+    })
+
+
+
+        $(".boximg").mouseover(function()
+    {
+       
+        $(this).toggleClass("pic")
+    })
+
+        $(".boximg").mouseout(function()
+    {
+        $(this).css({"transition":"0.50s"})
+         $(this).removeClass("pic")
+    })
+
+
+
+    })
+    </script>
+   
+</body>
+</html>
