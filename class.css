@@ -1,0 +1,117 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #FBF1FF;
+}
+h3{
+    margin-bottom: 1%;
+    font-size: 20px;
+
+}
+h1,
+h3{
+    text-align: center;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#col2
+,#col3 {
+    margin-top: 3%;
+}
+#header{
+    background-color: #9871b2;
+    text-align: center;
+    padding: 1%;
+    color:#faf9fa;
+    font-weight: bolder;
+    font-family: "Londrina Shadow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 2%;
+    border-bottom: 15px solid #3a1c36;
+    border-end-start-radius: 20%;
+    border-bottom-left-radius: 30px;
+}
+.para{
+
+    p{width: 90%;
+    margin-left: 5%;
+    margin-top: 1%; 
+    padding: 2%;
+    margin-bottom: 2%;
+    }
+}
+.box{
+    border: 2px solid #3a1c36;
+    width: 90%;
+    margin-left: 5%;
+    padding: 2%;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 20px 1px ;
+}
+.box1 {
+    width: 50%;
+    height:400px;
+
+}
+.image{
+    /* margin-top: 0%; */
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    border-radius: 20px 1px ;
+    border: 2px solid #3a1c36;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 10px black;
+    /* background-color: #9871b2;     */
+}
+.box2{
+    height: 400px;
+   width: 23%;
+   margin-top: 15px;
+   padding: 20px 0px 15px; 
+}
+.boximg{
+    height: 300px;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.foot{
+    background-color: #9871b2;
+    color: white;
+    text-align: center;
+    padding: 0.51%; 
+    margin-top: 5%; 
+}
+.end{
+    background-color: #3a1c36;
+    color: white;
+    text-align: center;
+    padding: 0.2%;
+}
+.class{
+    background-color: #e3d0ea;
+    color: #3a1c36;
+    transition: 500ms;
+    cursor: grab;
+    border-radius: 30px;
+    padding: 1%;
+}
+.pic{
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px black;
+    transition: 0.50s;
+    cursor: grab;
+    transform: scale(1.2);
+
+}
