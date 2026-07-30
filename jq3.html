@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+            background-color:#ece6d4;
+        }
+        header{
+            background-color: #9d9d8c;
+            padding: 1%;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Spicy Rice", serif;
+            font-weight: 100;
+            font-style: normal;
+            border-bottom: 5px solid #5a5d56;
+            border-end-start-radius: 20px;
+            color: rgb(42, 42, 42);
+        }
+        .fadein{
+            font-family: "Ranchers", sans-serif;
+            text-align: center;
+            padding-top: 5%;
+            width: 50%;
+            color: rgb(42, 42, 42);
+            font-size: 1.3rem;
+            font-weight: lighter;
+            margin-left: 25%;
+            border-bottom:2px solid #5a5d56;
+        }
+        #HTML,
+        #JS,
+        #JQ
+        {
+            cursor:grab;
+            text-align: center;
+            padding: 2%;
+            margin-top: 3%;
+            color: rgb(42, 42, 42);
+            /* border-bottom: 2px solid #9d9d8c; */
+        }
+        
+        .js{
+            background-color: #d6cdba;
+            cursor: grab;
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
+            border: 2px solid #5a5d56;
+            border-radius: 20px;
+            padding: 3%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
+            margin-top: 3%;
+        }
+        .html,
+        .jq{
+            display: none;
+            cursor: grab;
+            width: 80%;
+            margin-top: 3%;
+            margin-left: 10%;
+            text-align: center;
+            border: 2px solid #5a5d56;
+            border-radius: 20px;
+            padding: 3%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
+            background-color: #d6cdba;
+        }
+        .foot{
+            text-align: center;
+            margin-top: 8%;
+            background-color: #b7bda7;
+            padding: 1%;
+        }
+        .end{
+            text-align: center;
+            background-color: #5a5d56;
+            padding: 0.1%;
+            color: white;
+        }
+        h2{
+            padding-bottom: 2%;
+
+        }
+        @media(max-width:700px){
+            header{
+                font-size: 1.5rem;
+            }
+            .fadein{
+                font-size: 1rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .foot,.end{
+                font-size: 0.85rem;
+            }
+        }
+</style>
+<body>
+    <header>
+        FadeIn, Fadeout, FadeTo using jQuery:-
+    </header>
+    <div class="fadein">
+    <h2 id="HTML">
+        FadeIn
+    </h2></div>
+    
+    <div class="html">
+        <h2>HTML</h2>
+        <p class="Html">HTML stands for HyperText Markup Language.
+    It is the standard language used to create web pages.
+    HTML provides the basic structure of a website.
+    It uses different tags to organize content.
+    Tags help display headings, paragraphs, images, and links.
+    HTML is easy to learn for beginners.
+    It works together with CSS and JavaScript.
+    HTML documents start with the <!DOCTYPE html> declaration.
+    The <html> tag is the root element of the page.
+    The <head> section contains the page information.
+    The <body> section contains visible content.
+    HTML supports tables, lists, forms, and multimedia.
+    It allows developers to add images and videos.
+    Semantic HTML improves readability and accessibility.
+    HTML is supported by all modern web browsers.
+    It is not a programming language.
+    It is a markup language used to describe content.
+    HTML is essential for web development.
+    Every website uses HTML as its foundation.
+    Learning HTML is the first step toward becoming a web developer.</p>
+
+    </div>
+     
+     <div class="fadein">
+    <h2 id="JS">
+        FadeOut
+    </h2></div>
+    
+    <div class="js">
+        <h2>Javascript</h2>
+        <p>JavaScript is a popular programming language for the web.
+    It adds interactivity to websites.
+    JavaScript works with HTML and CSS.
+    It can respond to user actions like clicks.
+    It is used to create dynamic web pages.
+    JavaScript can change HTML content using the DOM.
+    It can also modify CSS styles.
+    Variables store data in JavaScript.
+    Functions perform specific tasks.
+    Loops help repeat actions automatically.
+    Conditions allow decision-making in programs.
+    JavaScript supports events like click and hover.
+    It can validate form inputs.
+    JavaScript is supported by all major browsers.
+    It is widely used in web development.
+    It can communicate with servers using APIs.
+    JavaScript makes websites faster and more interactive.
+    Many modern frameworks are based on JavaScript.
+    It is an essential skill for front-end developers.
+    Learning JavaScript helps build powerful web applications.</p></div>
+
+     <div class="fadein">
+    <h2 id="JQ">
+        FadeTo
+    </h2></div>
+    
+    <div class="jq">
+        <h2>jQuery</h2>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+    jQuery is a fast and lightweight JavaScript library.
+    It makes JavaScript coding simpler.
+    jQuery reduces the amount of code needed.
+    It is easy for beginners to learn.
+    jQuery uses the $ symbol to select elements.
+    It simplifies DOM manipulation.
+    It makes event handling easier.
+    jQuery supports animations and effects.
+    It can hide and show elements quickly.
+    It helps create smooth user interactions.
+    jQuery works across different web browsers.
+    It simplifies AJAX requests.
+    Many websites still use jQuery.
+    It can add sliders and image galleries.
+    jQuery plugins extend its functionality.
+    It works together with HTML and CSS.
+    It speeds up front-end development.</p></div>
+
+     <footer>
+        <div class="foot">
+            Email:rawattanuja197@gmail.com
+        </div>
+        <div class="end">&copy; Tanuja Rawat 2026|All right reserved</div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+
+           $("#HTML").click(function()
+        {
+            $(".html").fadeIn(1000);
+            
+        });
+
+        $("#JS").click(function(){
+            $(".js").fadeOut(1000)
+        })
+        
+
+        $("#JQ").click(function(){
+            $(".jq").fadeTo(250,0.50)
+        })
+            
+        
+        
+        })
+    </script>
+</body>
+</html>

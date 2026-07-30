@@ -151,7 +151,7 @@
 
         $("p").mouseout(function()
     {
-      
+        
         $(this).removeClass("class ")
      })
 
@@ -165,22 +165,19 @@
 
          $("h1").mouseout(function()
     {
+         
          $(this).removeClass("class")
     })
 
 
 
-        $(".boximg").mouseover(function()
+        $(".boximg").click(function()
     {
-       
+        $(this).css({"transition":"500ms"})
         $(this).toggleClass("pic")
     })
 
-        $(".boximg").mouseout(function()
-    {
-        $(this).css({"transition":"0.50s"})
-         $(this).removeClass("pic")
-    })
+    
 
 
 

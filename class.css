@@ -6,6 +6,7 @@
 }
 body{
     background-color: #FBF1FF;
+    overflow: hidden;
 }
 h3{
     margin-bottom: 1%;
