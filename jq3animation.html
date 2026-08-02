@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    Effects in jQuery:-</header>
+        <h3 id ="h1">Clip Effect</h3>
+        <div class="box1">
+            <div id="img1" style="background-image: url(https://i.pinimg.com/736x/2a/37/d8/2a37d8b5e02e3da8695f60f48aed1185.jpg);"></div>
+        </div>
+         <h3 id="h2">Bounce Effect</h3>
+        <div class="box1">
+            <div id="img2" style="background-image: url(https://i.pinimg.com/1200x/a2/df/42/a2df42061d19e98e28e6e158b271a112.jpg);"></div>
+        </div>
+         <h3 id="h3">Slide Effect</h3>
+        <div class="box1">
+            <div id="img3" style="background-image: url(https://i.pinimg.com/736x/c8/29/bf/c829bfc28a13b592c768fb73a7066269.jpg);"></div>
+        </div>
+         <h3 id="h4">Toggle</h3>
+        <div class="box1">
+            <div id="img4" style="background-image: url(https://i.pinimg.com/736x/f0/50/bc/f050bc236535d340796471922b767f9e.jpg);"></div>
+        </div>
+        <footer>
+            <div class="foot">
+                Email:rawattanuja197@gmail.com
+            </div>
+            <div class="end">
+                &copy;Tanuja Rawat 2026|All Right Reserved
+            </div>
+        </footer>
+</body>
+
+<script>
+    $(document).ready(function(){
+    $( "#h1" ).click(function() {
+    $("#img1").toggle( "clip");
+        });
+
+    $( "#h2" ).click(function() {
+    $("#img2").effect( "bounce",{times:3}, 1000 );
+        });
+         $( "#h3" ).click(function() {
+    $("#img3").toggle( "slide", 1000 );
+        });
+         $( "#h4" ).click(function() {
+    $("#img4").toggle( "fold", 1000 );
+        });
+    })
+
+
+</script>
+</html>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #dab0c0;
+    }
+    .box1{
+        width: 50%;
+        margin-left: 25%;
+        height: 500px;
+        border-radius: 20px;
+        background-color: #e0d8db;
+         padding-top:3.2% ; 
+        margin-top: 1%;
+        box-shadow: 1px 1px 10px black;
+    }
+    
+    #img1
+    ,#img2
+    ,#img3
+    ,#img4{
+        background-size: cover;
+        height: 400px; 
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 20px;
+    }
+    h3{
+        cursor: grab;
+        margin-top: 5%;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Fascinate Inline", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    header{
+        text-align: center;
+        background-color:#4d3d79 ;
+        padding: 1%;
+        font-size: 30px;
+        font-family: "Londrina Shadow", sans-serif;
+        /* font-weight: 400; */
+        /* font-style: normal; */
+        font-weight: 550;
+        color: white;
+        border-bottom: 7px solid #281e3c;
+        border-end-start-radius: 40px;
+    }
+    .end{
+        background-color:  #281e3c;
+        padding: 0.1%;
+        text-align: center;
+        color: white;
+    }
+    .foot{
+        background-color: #4d3d79 ;
+        text-align: center;
+        padding: 0.5%;
+        color: white;
+        margin-top: 5%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    @media(max-width:700px){
+           .box1{
+        height: 230px;
+    }
+    #img1
+    ,#img2
+    ,#img3
+    ,#img4{ 
+        height: 200px;            
+    }
+    h3{
+        font-size: 15px;
+    }
+    header{
+        font-size: 20px;
+    }
+    .end,
+    .foot{
+        font-size: 13px;
+    }
+    }
+
+</style>
+<!-- #dab0c0
+ #cc89a6
+ #4d3d79
+ #281e3c -->
